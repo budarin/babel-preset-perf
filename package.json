@@ -1,0 +1,10 @@
+{
+  "name": "babel-preset-perf",
+  "version": "1.0.0",
+  "description": "Babel preset for optimizing code performance",
+  "main": "./dist/index.js",
+  "repository": "https://github.com/budarin/babel-preset-perf.git",
+  "author": "vadim_budarin <budarin-vv@yandex.ru>",
+  "license": "MIT",
+  "private": false
+}
