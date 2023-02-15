@@ -1,7 +1,7 @@
-var { arrayMapReduceHelper: _amrh } = require('babel-preset-perf/helpers/arrayMapReduceHelper');
+var { arrayMapReduceHelper: _amrh } = require('babel-preset-perf/dist/helpers/arrayMapReduceHelper');
 var {
     arrayMapReduceHelperWithMapThis: _amrhwmt,
-} = require('babel-preset-perf/helpers/arrayMapReduceHelperWithMapThis');
+} = require('babel-preset-perf/dist/helpers/arrayMapReduceHelperWithMapThis');
 var arr = [1, 2, 3];
 var x2 = _amrhwmt(
     arr,

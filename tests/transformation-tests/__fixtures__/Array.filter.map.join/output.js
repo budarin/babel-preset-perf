@@ -1,13 +1,13 @@
-var { arrayFilterMapJoinHelper: _afmjt } = require('babel-preset-perf/helpers/arrayFilterMapJoinHelper');
+var { arrayFilterMapJoinHelper: _afmjt } = require('babel-preset-perf/dist/helpers/arrayFilterMapJoinHelper');
 var {
     arrayFilterMapJoinHelperWithMapThis: _afmjtwmt,
-} = require('babel-preset-perf/helpers/arrayFilterMapJoinHelperWithMapThis');
+} = require('babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithMapThis');
 var {
     arrayFilterMapJoinHelperWithFilterThis: _afmjtwft,
-} = require('babel-preset-perf/helpers/arrayFilterMapJoinHelperWithFilterThis');
+} = require('babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterThis');
 var {
     arrayFilterMapJoinHelperWithFilterAndMapThis: _afmjtwfmt,
-} = require('babel-preset-perf/helpers/arrayFilterMapJoinHelperWithFilterAndMapThis');
+} = require('babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterAndMapThis');
 var obj = {
     i: 1,
     j: 1,

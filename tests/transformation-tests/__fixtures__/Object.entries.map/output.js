@@ -1,7 +1,7 @@
 var {
     objectEntriesMapHelperWithMapThis: _oemhwmt,
-} = require('babel-preset-perf/helpers/objectEntriesMapHelperWithMapThis');
-var { objectEntriesMapHelper: _oemh } = require('babel-preset-perf/helpers/objectEntriesMapHelper');
+} = require('babel-preset-perf/dist/helpers/objectEntriesMapHelperWithMapThis');
+var { objectEntriesMapHelper: _oemh } = require('babel-preset-perf/dist/helpers/objectEntriesMapHelper');
 _oemh(smallObj, ([key, val], i) => key.length + String(val).length + i);
 var obj = {
     i: 1,

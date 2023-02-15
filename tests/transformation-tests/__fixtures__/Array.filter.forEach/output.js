@@ -1,13 +1,13 @@
-var { arrayMapForEachHelper: _amfeh } = require('babel-preset-perf/helpers/arrayMapForEachHelper');
+var { arrayMapForEachHelper: _amfeh } = require('babel-preset-perf/dist/helpers/arrayMapForEachHelper');
 var {
     arrayMapForEachHelperWithMapThis: _amfehwmt,
-} = require('babel-preset-perf/helpers/arrayMapForEachHelperWithMapThis');
+} = require('babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapThis');
 var {
     arrayMapForEachHelperWithForEachThis: _amfehwfet,
-} = require('babel-preset-perf/helpers/arrayMapForEachHelperWithForEachThis');
+} = require('babel-preset-perf/dist/helpers/arrayMapForEachHelperWithForEachThis');
 var {
     arrayMapForEachHelperWithMapAndForEachThis: _amfehwmfet,
-} = require('babel-preset-perf/helpers/arrayMapForEachHelperWithMapAndForEachThis');
+} = require('babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapAndForEachThis');
 var arr = [1, 2, 3];
 var obj = {
     i: 1,

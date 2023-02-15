@@ -1,4 +1,4 @@
-var { objectValuesFirstItemHelper: _ovfih } = require('babel-preset-perf/helpers/objectValuesFirstItemHelper');
+var { objectValuesFirstItemHelper: _ovfih } = require('babel-preset-perf/dist/helpers/objectValuesFirstItemHelper');
 var objs = {
     a: 1,
     b: 2,

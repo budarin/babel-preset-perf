@@ -1,4 +1,4 @@
-var { stringSliceHelper: _ssh } = require('babel-preset-perf/helpers/stringSliceHelper');
+var { stringSliceHelper: _ssh } = require('babel-preset-perf/dist/helpers/stringSliceHelper');
 _ssh('String', 1, 5);
 _ssh('String', 1);
 _ssh('String');

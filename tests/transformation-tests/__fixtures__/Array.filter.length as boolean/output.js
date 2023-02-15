@@ -1,4 +1,4 @@
-var { arrayFilterLengthHelper: _aflh } = require('babel-preset-perf/helpers/arrayFilterLengthHelper');
+var { arrayFilterLengthHelper: _aflh } = require('babel-preset-perf/dist/helpers/arrayFilterLengthHelper');
 // conditional expr +
 arr.some(Boolean) ? 1 : 0;
 

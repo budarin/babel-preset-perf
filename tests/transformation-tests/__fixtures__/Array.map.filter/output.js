@@ -1,13 +1,13 @@
-var { arrayMapFilterHelper: _amfh } = require('babel-preset-perf/helpers/arrayMapFilterHelper');
+var { arrayMapFilterHelper: _amfh } = require('babel-preset-perf/dist/helpers/arrayMapFilterHelper');
 var {
     arrayMapFilterHelperWithMapThis: _amfhwmt,
-} = require('babel-preset-perf/helpers/arrayMapFilterHelperWithMapThis');
+} = require('babel-preset-perf/dist/helpers/arrayMapFilterHelperWithMapThis');
 var {
     arrayMapFilterHelperWithFilterThis: _amfhwft,
-} = require('babel-preset-perf/helpers/arrayMapFilterHelperWithFilterThis');
+} = require('babel-preset-perf/dist/helpers/arrayMapFilterHelperWithFilterThis');
 var {
     arrayMapFilterHelperWithMapAndFilterThis: _amfhwfmt,
-} = require('babel-preset-perf/helpers/arrayMapFilterHelperWithMapAndFilterThis');
+} = require('babel-preset-perf/dist/helpers/arrayMapFilterHelperWithMapAndFilterThis');
 var x = _amfhwfmt(
     [1, 2, 3],
     function (x) {

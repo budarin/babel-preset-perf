@@ -1,7 +1,7 @@
-var { arrayFilterJoinHelper: _afjh } = require('babel-preset-perf/helpers/arrayFilterJoinHelper');
+var { arrayFilterJoinHelper: _afjh } = require('babel-preset-perf/dist/helpers/arrayFilterJoinHelper');
 var {
     arrayFilterJoinHelperWithFilterThis: _afjhwft,
-} = require('babel-preset-perf/helpers/arrayFilterJoinHelperWithFilterThis');
+} = require('babel-preset-perf/dist/helpers/arrayFilterJoinHelperWithFilterThis');
 var arr = ['  1', '2', '3   '];
 var obj = {
     i: 1,

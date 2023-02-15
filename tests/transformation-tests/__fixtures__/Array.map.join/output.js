@@ -1,5 +1,7 @@
-var { arrayMapJoinHelperWithMapThis: _amjhwmt } = require('babel-preset-perf/helpers/arrayMapJoinHelperWithMapThis');
-var { arrayMapJoinHelper: _amjh } = require('babel-preset-perf/helpers/arrayMapJoinHelper');
+var {
+    arrayMapJoinHelperWithMapThis: _amjhwmt,
+} = require('babel-preset-perf/dist/helpers/arrayMapJoinHelperWithMapThis');
+var { arrayMapJoinHelper: _amjh } = require('babel-preset-perf/dist/helpers/arrayMapJoinHelper');
 var arr = [1, 2, 3];
 var x = _amjh(
     arr,

@@ -8,11 +8,12 @@ import { IGNORE_MODULE_COMMENT, IGNORE_TRANSPILE_MODULES, PRESET_NAME } from './
 export function getProgramVisitor(): {
     enter(this: PluginPass, path: NodePath<t.Program>): void;
 } {
-    const packageFilesPath = path.sep + PRESET_NAME + path.sep;
+    const { sep } = path;
+    const packageFilesPath = sep + PRESET_NAME + sep;
 
     return {
         enter(path): void {
-            if (this.filename?.includes(packageFilesPath)) {
+            if (this.filename?.includes(`dist${sep}${packageFilesPath}`)) {
                 path.skip();
                 return;
             }

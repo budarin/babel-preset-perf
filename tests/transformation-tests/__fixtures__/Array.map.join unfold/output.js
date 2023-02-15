@@ -1,4 +1,4 @@
-var { arrayJoinHelper: _ajh } = require('babel-preset-perf/helpers/arrayJoinHelper');
+var { arrayJoinHelper: _ajh } = require('babel-preset-perf/dist/helpers/arrayJoinHelper');
 String(1) + ',' + String(2) + ',' + String(3);
 
 // +

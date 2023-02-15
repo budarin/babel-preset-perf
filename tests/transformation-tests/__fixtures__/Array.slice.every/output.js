@@ -1,7 +1,7 @@
 var {
     arraySliceEveryHelperWithEveryThis: _asehwet,
-} = require('babel-preset-perf/helpers/arraySliceEveryHelperWithEveryThis');
-var { arraySliceEveryHelper: _aseh } = require('babel-preset-perf/helpers/arraySliceEveryHelper');
+} = require('babel-preset-perf/dist/helpers/arraySliceEveryHelperWithEveryThis');
+var { arraySliceEveryHelper: _aseh } = require('babel-preset-perf/dist/helpers/arraySliceEveryHelper');
 _aseh(nums, undefined, undefined, (x, i) => x > 1);
 _aseh(nums, 1, undefined, (x, i) => x > 1);
 _aseh(nums, 1, end, (x, i) => x > 1);

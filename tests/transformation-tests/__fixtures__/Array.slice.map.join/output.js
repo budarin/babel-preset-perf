@@ -1,7 +1,7 @@
 var {
     arraySliceMapJoinHelperWithMapThis: _asmjhwmt,
-} = require('babel-preset-perf/helpers/arraySliceMapJoinHelperWithMapThis');
-var { arraySliceMapJoinHelper: _asmjh } = require('babel-preset-perf/helpers/arraySliceMapJoinHelper');
+} = require('babel-preset-perf/dist/helpers/arraySliceMapJoinHelperWithMapThis');
+var { arraySliceMapJoinHelper: _asmjh } = require('babel-preset-perf/dist/helpers/arraySliceMapJoinHelper');
 var start = 1;
 var end = 3;
 var obj = {

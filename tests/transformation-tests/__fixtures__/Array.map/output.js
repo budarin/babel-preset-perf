@@ -1,5 +1,5 @@
-var { arrayMapHelper: _amh } = require('babel-preset-perf/helpers/arrayMapHelper');
-var { arrayMapHelperWithMapThis: _amhwmt } = require('babel-preset-perf/helpers/arrayMapHelperWithMapThis');
+var { arrayMapHelper: _amh } = require('babel-preset-perf/dist/helpers/arrayMapHelper');
+var { arrayMapHelperWithMapThis: _amhwmt } = require('babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis');
 var x = _amhwmt(
     arr,
     function (x) {

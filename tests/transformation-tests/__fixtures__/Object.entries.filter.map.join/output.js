@@ -1,15 +1,15 @@
 var {
     objectEntriesFilterMapJoinHelperWithFilterAndMapThis: _oefmjtwfmt,
-} = require('babel-preset-perf/helpers/objectEntriesFilterMapJoinHelperWithFilterAndMapThis');
+} = require('babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterAndMapThis');
 var {
     objectEntriesFilterMapJoinHelperWithMapThis: _oefmjtwmt,
-} = require('babel-preset-perf/helpers/objectEntriesFilterMapJoinHelperWithMapThis');
+} = require('babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithMapThis');
 var {
     objectEntriesFilterMapJoinHelperWithFilterThis: _oefmjtwft,
-} = require('babel-preset-perf/helpers/objectEntriesFilterMapJoinHelperWithFilterThis');
+} = require('babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterThis');
 var {
     objectEntriesFilterMapJoinHelper: _oefmjt,
-} = require('babel-preset-perf/helpers/objectEntriesFilterMapJoinHelper');
+} = require('babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelper');
 _oefmjt(
     obj,
     ([key, val], i) => key.length > 1 && val > -1,

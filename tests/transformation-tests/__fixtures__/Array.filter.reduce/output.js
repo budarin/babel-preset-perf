@@ -1,7 +1,7 @@
 var {
     arrayFilterReduceHelperWithFilterThis: _afrhwft,
-} = require('babel-preset-perf/helpers/arrayFilterReduceHelperWithFilterThis');
-var { arrayFilterReduceHelper: _afrh } = require('babel-preset-perf/helpers/arrayFilterReduceHelper');
+} = require('babel-preset-perf/dist/helpers/arrayFilterReduceHelperWithFilterThis');
+var { arrayFilterReduceHelper: _afrh } = require('babel-preset-perf/dist/helpers/arrayFilterReduceHelper');
 var r = _afrh(
     arr,
     (x) => x > 1,
