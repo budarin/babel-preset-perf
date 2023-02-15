@@ -100,7 +100,9 @@ export default declare((api, options: PluginOptions) => {
             (this as PluginState).file.imports = {};
         },
 
-        post: function (): void {},
+        post: function (): void {
+            //
+        },
 
         /* eslint-disable */
         manipulateOptions: (_, parserOpts) => {
