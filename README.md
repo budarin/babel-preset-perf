@@ -99,7 +99,7 @@ After that, your config will transpile all modules imported by your application 
 
 ## Options
 
-The preset has the following parameters:
+The preset has the following options:
 
 -   name
 -   target
@@ -107,7 +107,7 @@ The preset has the following parameters:
 -   verbose
 -   useStatsServer
 
-Example of using parameters to configure a preset
+Example of using options to configure a preset
 
 ```js
 {
