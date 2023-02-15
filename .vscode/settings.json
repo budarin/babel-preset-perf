@@ -1,0 +1,118 @@
+{
+    // text editor
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": false
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.highlightActiveBracketPair": false,
+
+    // files
+    "files.autoSave": "onFocusChange",
+    "files.eol": "\n",
+
+    // workbench
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "vs-nomo-dark",
+    "workbench.sideBar.location": "left",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.list.smoothScrolling": true,
+
+    // prettier
+    "prettier.enable": true,
+    "json.format.enable": true,
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // eslint
+    "eslint.alwaysShowStatus": true,
+
+    // stylelint
+    "css.validate": true,
+    "less.validate": false,
+    "scss.validate": false,
+    "files.autoSaveDelay": 1000,
+    "stylelint.configFile": "./stylelint.config.js",
+
+    // git
+    "git.autofetch": true,
+    "git.autofetchPeriod": 60,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.branchProtection": ["master"],
+    "git.checkoutType": ["local", "remote"],
+    "git.ignoreRebaseWarning": true,
+    "git.inputValidationSubjectLength": 100,
+    "git.inputValidationLength": 200,
+
+    // ts/javascript
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.surveys.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.preferences.importModuleSpecifier": "relative",
+
+    // extension
+    "extensions.ignoreRecommendations": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "docker.explorerRefreshInterval": 1000,
+    "emmet.includeLanguages": {
+        "postcss": "css",
+        "javascript": "javascriptreact"
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "window.zoomLevel": 0,
+
+    // npm
+    "npm.packageManager": "yarn",
+    "npm.scriptExplorerAction": "run",
+
+    //
+    "explorer.confirmDragAndDrop": false,
+    "json.maxItemsComputed": 250000,
+
+    // terminal
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+    "terminal.integrated.minimumContrastRatio": 4.5,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.profiles.windows": {
+        "Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": []
+        }
+    },
+    "terminal.integrated.scrollback": 500000,
+    "terminal.integrated.enablePersistentSessions": false
+}
