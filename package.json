@@ -26,8 +26,7 @@
         "@babel/core": "^7.0.0-0"
     },
     "dependencies": {
-        "@babel/types": "^7.20.7",
-        "husky": "^8.0.3"
+        "@babel/types": "^7.20.7"
     },
     "devDependencies": {
         "@babel/cli": "^7.20.7",
@@ -56,6 +55,7 @@
         "fastify": "^4.13.0",
         "jest": "^29.4.2",
         "json-schema-to-ts": "^2.6.2",
+        "husky": "^8.0.3",
         "lint-staged": "^13.1.2",
         "microtime": "^3.1.1",
         "prettier": "^2.8.4",
