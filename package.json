@@ -1,6 +1,6 @@
 {
     "name": "babel-preset-perf",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Babel preset for optimizing code performance",
     "keywords": [
         "babel",
@@ -87,7 +87,6 @@
         "build": "sh ./scripts/build.sh",
         "clear-cache": "sh ./scripts/clean-cache.sh",
         "run-statsServer": "sh ./scripts/run-stats-server.sh",
-        "postinstall": "sh ./scripts/postinstall.sh",
         "prepare": "husky install",
         "prepublishOnly": "sh ./scripts/prepublishOnly.sh",
         "postpublish": "yarn clear-cache",
