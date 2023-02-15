@@ -167,9 +167,9 @@ This parameter in the preset marks only transformations for chains of cyclic met
 These performance optimizations are based on the fact that:
 
 -   all arrays in the application are normal - without holes
--   chains of method calls, instead of executing each in its own cycle and creating a new array each time, use one cycle and the original array - this imposes a restriction on the use of transformations: predicates in which the 3rd parameter array is used cannot be implemented because we do not create new arrays but work with the original one
+-   chains of method calls, instead of executing each in its own cycle and creating a new array each time, use one cycle and the original array. This imposes a restriction on the use of transformations: predicates in which the 3rd parameter array is used cannot be implemented because we do not create new arrays but work with the original one
 
-If you find that someone is creating an array with holes (sparse arrays), immediately write to him about the problem and tell him that creating leaky arrays is bad practice, and it's not good to do an anti-pattern anyway!
+If you find that someone is creating an array with holes (sparse arrays), immediately write to him about the problem and tell him that creating sparse arrays is bad practice, and it's not good to do an anti-pattern anyway!
 
 ### `verbose`: boolean, by default: false
 
@@ -177,7 +177,7 @@ This parameter is responsible for displaying warnings to the console during tran
 
 ### `useStatsServer`: boolean | object, by default: false
 
-While the preset is running, you can collect all the statistics on the transformations performed in the modules.
+While the preset is running, you can collect the statistics on the transformations performed in the modules.
 
 To do this, you need to configure the parameters of the transformation statistics collection server by specifying the address or host name on which the statistics collection server is running and its port, for example:
 
@@ -364,7 +364,7 @@ function helper(obj) {
 helper(obj);
 ```
 
-It makes no sense to wait for the end of a natively implemented loop to get `values` from an object
+It makes no sense to wait for the end of a natively implemented loop to get all `values` from an object
 
 ### Object
 
@@ -425,15 +425,15 @@ It turned out that `substring` is much more productive than the `slice` method, 
 
 After passing all the checks and tests, the final code can be transformed by replacing all `const` and `let` with `var`.
 
-This can add a few percent to the increase in productivity, given that `const` and `let` need to create a context for their work, and this is an additional time cost.
+This can add a few percent of performance when initializing code., given that `const` and `let` need to create a context for their work, and this is an additional time cost.
 
 There are no negative consequences of such transformation, and a few percent increase in productivity without taking any action is just nice.
 
-The idea of this transformation, and so many more useful tips offered me [Victor Homyakov](https://github.com/victor-homyakov)
+The idea of this transformation, as well as many other useful tips, was offered to me by [Victor Homyakov](https://github.com/victor-homyakov)
 
 ## Troubleshooting
 
-A tragedy may happen - one of the packages in your dependencies produces arrays with holes/sparse arrays (hopefully not your code!?) - in this case, the trasformations may not produce the result that is expected (it all depends on the methods - they turn out to handle holes differently!
+A tragedy may happen - one of the packages in your dependencies produces arrays with holes/sparse arrays (hopefully not your code!?) - in this case, the trasformations may not produce the result that is expected (it all depends on the array's methods - they turn out to handle holes differently!
 
 The question arises in detecting this negligent developer, his package and excluding him and his package from preset processing.
 First you need to modify the rule for webpack so that you can get a list of modules imported from node_modules
