@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arrayJoinHelper(arrayObject, separator = ',') {
     var i = 0;
     var result = arrayObject[0];

@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arrayMapFilterHelperWithMapAndFilterThis(arrayObject, mapPredicate, mapThis, filterPredicate, filterThis) {
     var i = -1;
     var result = [];

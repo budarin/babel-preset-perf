@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arrayMapFilterJoinHelper(arrayObject, mapPredicate, filterPredicate, separator = ',') {
     var i = -1;
     var result = '';

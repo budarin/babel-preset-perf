@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arrayFilterLengthHelper(arrayObject, filterPredicate) {
     var i = -1;
     var result = 0;

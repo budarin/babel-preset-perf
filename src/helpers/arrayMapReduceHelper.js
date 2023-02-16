@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arrayMapReduceHelper(arrayObject, mapPredicate, reducePredicate, initialValue) {
     var i = -1;
     var result = initialValue;

@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arrayMapHelper(arrayObject, mapPredicate) {
     var i = -1;
     var len = arrayObject.length;

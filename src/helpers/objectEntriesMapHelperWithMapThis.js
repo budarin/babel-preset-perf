@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function objectEntriesMapHelperWithMapThis(obj, mapPredicate, mapThis) {
     var i = -1;
     var keys = Object.keys(obj);

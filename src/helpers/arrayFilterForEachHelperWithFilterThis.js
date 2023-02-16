@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arrayFilterForEachHelperWithFilterThis(array, filterPredicate, filterThis, forEachPredicate) {
     let i = -1;
     let foundCount = -1;
