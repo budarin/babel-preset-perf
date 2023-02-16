@@ -14,13 +14,11 @@ export default declare((api) => {
             Program: getProgramVisitor(),
 
             VariableDeclaration: {
-                enter(path): void {
+                exit(path): void {
                     if (hasPluginNoTrasformComment(path)) {
                         return;
                     }
-                },
 
-                exit(path): void {
                     if (pluginsConfig['Variable transform const and let with var']) {
                         if (path.node.kind !== 'var') {
                             path.node.kind = 'var';

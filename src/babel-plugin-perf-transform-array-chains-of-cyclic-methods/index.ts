@@ -100,16 +100,6 @@ export default declare((api, options: PluginOptions) => {
             (this as PluginState).file.imports = {};
         },
 
-        post: function (): void {
-            //
-        },
-
-        /* eslint-disable */
-        manipulateOptions: (_, parserOpts) => {
-            parserOpts.plugins.push('jsx');
-        },
-        /* eslint-enable */
-
         visitor: {
             Program: {
                 ...getProgramVisitor(),

@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-/* eslint-disable */
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { declarePreset } from '@babel/helper-plugin-utils';
 
 import { validateOptions } from './utils/validateOptions';
@@ -20,7 +20,13 @@ export {
     arrayChainsMethodsTransformations,
 } from './utils/consts';
 
-export default declarePreset((api, options) => {
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+export default declarePreset((api, options: PluginOptions) => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
     api.assertVersion(7);
 
     validateOptions(options);
