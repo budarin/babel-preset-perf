@@ -1,13 +1,13 @@
 'use strict';
 
 // @babel-preset-perf-ignore
-function arrayMapReduceHelper(arrayObject, mapPredicate, reducePredicate, initialValue) {
+function arrayMapReduceHelper(array, mapPredicate, reducePredicate, initialValue) {
     var i = -1;
     var result = initialValue;
-    var len = arrayObject.length;
+    var len = array.length;
 
     while (++i < len) {
-        result = reducePredicate(result, mapPredicate(arrayObject[i], i), i);
+        result = reducePredicate(result, mapPredicate(array[i], i), i);
     }
 
     return result;

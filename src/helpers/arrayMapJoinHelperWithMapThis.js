@@ -1,13 +1,13 @@
 'use strict';
 
 // @babel-preset-perf-ignore
-function arrayMapJoinHelperWithMapThis(arrayObject, mapPredicate, mapThis, separator = ',') {
+function arrayMapJoinHelperWithMapThis(array, mapPredicate, mapThis, separator = ',') {
     var i = 0;
-    var len = arrayObject.length;
-    var result = String(mapPredicate.call(mapThis, arrayObject[0], 0));
+    var len = array.length;
+    var result = String(mapPredicate.call(mapThis, array[0], 0));
 
     while (++i < len) {
-        result = result + separator + String(mapPredicate.call(mapThis, arrayObject[i], i));
+        result = result + separator + String(mapPredicate.call(mapThis, array[i], i));
     }
 
     return result;

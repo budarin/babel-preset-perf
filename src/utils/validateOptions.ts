@@ -4,7 +4,6 @@ import {
     wholeListOfTransformations,
     nodeTargetAllTransformationsList,
     nodeTargetSafeTransformationsList,
-    ARRAY_JOIN,
 } from './consts';
 
 export function validateOptions(options: PluginOptions): PluginOptions {
@@ -87,9 +86,6 @@ export function validateOptions(options: PluginOptions): PluginOptions {
             }
         });
     }
-
-    // temporary exclude ARRAY_JOIN transformation
-    pluginsConfig[ARRAY_JOIN as ConfigKey] = false;
 
     return options;
 }

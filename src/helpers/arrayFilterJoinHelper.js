@@ -1,13 +1,13 @@
 'use strict';
 
 // @babel-preset-perf-ignore
-function arrayFilterJoinHelper(arrayObject, filterPredicate, separator = ',') {
+function arrayFilterJoinHelper(array, filterPredicate, separator = ',') {
     var i = -1;
     var result = '';
-    var len = arrayObject.length;
+    var len = array.length;
 
     while (++i < len && result.length === 0) {
-        var item = arrayObject[i];
+        var item = array[i];
 
         if (filterPredicate(item, i)) {
             result = String(item);
@@ -16,7 +16,7 @@ function arrayFilterJoinHelper(arrayObject, filterPredicate, separator = ',') {
 
     i--;
     while (++i < len) {
-        var item = arrayObject[i];
+        var item = array[i];
 
         if (filterPredicate(item, i)) {
             result = result + separator + String(item);
