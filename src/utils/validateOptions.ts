@@ -84,5 +84,8 @@ export function validateOptions(options: PluginOptions): PluginOptions {
         });
     }
 
+    // temporary disable Array.join
+    pluginsConfig['Array.join'] = false;
+
     return options;
 }
