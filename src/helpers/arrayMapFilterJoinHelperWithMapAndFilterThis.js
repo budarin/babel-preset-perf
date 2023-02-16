@@ -2,7 +2,7 @@
 
 // @babel-preset-perf-ignore
 function arrayMapFilterJoinHelperWithMapAndFilterThis(
-    arrayObject,
+    array,
     mapPredicate,
     mapThis,
     filterPredicate,
@@ -11,10 +11,10 @@ function arrayMapFilterJoinHelperWithMapAndFilterThis(
 ) {
     var i = -1;
     var result = '';
-    var len = arrayObject.length;
+    var len = array.length;
 
     while (++i < len && result.length === 0) {
-        var item = mapPredicate.call(mapThis, arrayObject[i], i);
+        var item = mapPredicate.call(mapThis, array[i], i);
 
         if (filterPredicate.call(filterThis, item, i)) {
             result = String(item);
@@ -23,7 +23,7 @@ function arrayMapFilterJoinHelperWithMapAndFilterThis(
 
     i--;
     while (++i < len) {
-        var item = mapPredicate.call(mapThis, arrayObject[i], i);
+        var item = mapPredicate.call(mapThis, array[i], i);
 
         if (filterPredicate.call(filterThis, item, i)) {
             result = result + separator + String(item);

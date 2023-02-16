@@ -88,8 +88,5 @@ export function validateOptions(options: PluginOptions): PluginOptions {
         });
     }
 
-    // temporary exclude ARRAY_JOIN transformation
-    pluginsConfig[ARRAY_JOIN as ConfigKey] = false;
-
     return options;
 }

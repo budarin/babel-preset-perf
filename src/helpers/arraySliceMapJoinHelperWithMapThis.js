@@ -2,9 +2,9 @@
 
 // @babel-preset-perf-ignore
 function arraySliceMapJoinHelperWithMapThis(
-    arrayObject,
+    array,
     start = 0,
-    end = arrayObject.length,
+    end = array.length,
     mapPredicate,
     mapThis,
     separator = ',',
@@ -12,22 +12,22 @@ function arraySliceMapJoinHelperWithMapThis(
     var result = '';
 
     if (start > -1 && end > -1) {
-        result = String(mapPredicate.call(mapThis, arrayObject[start], start));
+        result = String(mapPredicate.call(mapThis, array[start], start));
 
         var i = start;
         while (++i < end) {
-            result = result + separator + String(mapPredicate.call(mapThis, arrayObject[i], i - start));
+            result = result + separator + String(mapPredicate.call(mapThis, array[i], i - start));
         }
     } else {
-        var len = arrayObject.length;
+        var len = array.length;
         var _start = start > -1 ? start : len + start;
         var _end = end >= 0 ? end : len + end;
 
-        result = String(mapPredicate.call(mapThis, arrayObject[_start], _start));
+        result = String(mapPredicate.call(mapThis, array[_start], _start));
 
         var i = _start;
         while (++i < _end) {
-            result = result + separator + String(mapPredicate.call(mapThis, arrayObject[i], i - _start));
+            result = result + separator + String(mapPredicate.call(mapThis, array[i], i - _start));
         }
     }
 

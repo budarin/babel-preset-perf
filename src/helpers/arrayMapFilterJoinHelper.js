@@ -1,13 +1,13 @@
 'use strict';
 
 // @babel-preset-perf-ignore
-function arrayMapFilterJoinHelper(arrayObject, mapPredicate, filterPredicate, separator = ',') {
+function arrayMapFilterJoinHelper(array, mapPredicate, filterPredicate, separator = ',') {
     var i = -1;
     var result = '';
-    var len = arrayObject.length;
+    var len = array.length;
 
     while (++i < len && result.length === 0) {
-        var item = mapPredicate(arrayObject[i], i);
+        var item = mapPredicate(array[i], i);
 
         if (filterPredicate(item, i)) {
             result = String(item);
@@ -16,7 +16,7 @@ function arrayMapFilterJoinHelper(arrayObject, mapPredicate, filterPredicate, se
 
     i--;
     while (++i < len) {
-        var item = mapPredicate(arrayObject[i], i);
+        var item = mapPredicate(array[i], i);
 
         if (filterPredicate(item, i)) {
             result = result + separator + String(item);

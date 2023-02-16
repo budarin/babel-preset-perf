@@ -1,13 +1,13 @@
 'use strict';
 
 // @babel-preset-perf-ignore
-function arrayMapHelperWithMapThis(arrayObject, mapPredicate, mapThis) {
+function arrayMapHelperWithMapThis(array, mapPredicate, mapThis) {
     var i = -1;
-    var len = arrayObject.length;
+    var len = array.length;
     var result = new Array(len);
 
     while (++i < len) {
-        result[i] = mapPredicate.call(mapThis, arrayObject[i], i);
+        result[i] = mapPredicate.call(mapThis, array[i], i);
     }
 
     return result;

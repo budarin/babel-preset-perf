@@ -1,13 +1,13 @@
 'use strict';
 
 // @babel-preset-perf-ignore
-function arrayMapFilterHelper(arrayObject, mapPredicate, filterPredicate) {
+function arrayMapFilterHelper(array, mapPredicate, filterPredicate) {
     var i = -1;
     var result = [];
-    var len = arrayObject.length;
+    var len = array.length;
 
     while (++i < len) {
-        var item = mapPredicate(arrayObject[i], i);
+        var item = mapPredicate(array[i], i);
 
         if (filterPredicate(item, i)) {
             result.push(item);

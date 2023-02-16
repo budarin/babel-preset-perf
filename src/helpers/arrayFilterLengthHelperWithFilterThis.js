@@ -1,13 +1,13 @@
 'use strict';
 
 // @babel-preset-perf-ignore
-function arrayFilterLengthHelperWithFilterThis(arrayObject, filterPredicate, filterThis) {
+function arrayFilterLengthHelperWithFilterThis(array, filterPredicate, filterThis) {
     var i = -1;
     var result = 0;
-    var len = arrayObject.length;
+    var len = array.length;
 
     while (++i < len) {
-        if (filterPredicate.call(filterThis, arrayObject[i], i)) {
+        if (filterPredicate.call(filterThis, array[i], i)) {
             result++;
         }
     }

@@ -1,16 +1,21 @@
 'use strict';
 
 // @babel-preset-perf-ignore
-function arrayJoinHelper(arrayObject, separator = ',') {
-    var i = 0;
-    var result = arrayObject[0];
-    var len = arrayObject.length;
+function arrayJoinHelper(array, argument) {
+    if (Array.isArray(array)) {
+        var separator = argument === undefined ? ',' : argument;
+        var i = 0;
+        var result = array[0];
+        var len = array.length;
 
-    while (++i < len) {
-        result += separator + arrayObject[i];
+        while (++i < len) {
+            result += separator + array[i];
+        }
+
+        return result;
+    } else {
+        return array.join(argument);
     }
-
-    return result;
 }
 
 module.exports = { arrayJoinHelper };
