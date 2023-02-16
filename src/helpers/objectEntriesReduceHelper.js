@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function objectEntriesReduceHelper(obj, reducePredicate, initialValue) {
     var i = -1;
     var result = initialValue;

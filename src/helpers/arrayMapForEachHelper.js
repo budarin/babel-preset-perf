@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arrayMapForEachHelper(array, mapPredicate, forEacPredicate) {
     var i = -1;
     var len = array.length;

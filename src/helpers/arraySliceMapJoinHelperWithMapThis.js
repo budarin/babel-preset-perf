@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arraySliceMapJoinHelperWithMapThis(
     arrayObject,
     start = 0,

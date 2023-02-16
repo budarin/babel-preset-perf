@@ -1,5 +1,6 @@
 'use strict';
 
+// @babel-preset-perf-ignore
 function arrayMapJoinHelper(arrayObject, mapPredicate, separator = ',') {
     var i = 0;
     var len = arrayObject.length;
