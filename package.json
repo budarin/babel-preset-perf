@@ -1,6 +1,6 @@
 {
     "name": "babel-preset-perf",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Babel preset for optimizing code performance",
     "keywords": [
         "babel",
