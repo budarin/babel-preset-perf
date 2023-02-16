@@ -4,7 +4,6 @@ import {
     wholeListOfTransformations,
     nodeTargetAllTransformationsList,
     nodeTargetSafeTransformationsList,
-    ARRAY_JOIN,
 } from './consts';
 
 export function validateOptions(options: PluginOptions): PluginOptions {
