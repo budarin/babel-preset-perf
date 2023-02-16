@@ -4,6 +4,7 @@ import {
     wholeListOfTransformations,
     nodeTargetAllTransformationsList,
     nodeTargetSafeTransformationsList,
+    ARRAY_JOIN,
 } from './consts';
 
 export function validateOptions(options: PluginOptions): PluginOptions {
@@ -73,15 +74,22 @@ export function validateOptions(options: PluginOptions): PluginOptions {
         });
     }
 
+    type ConfigKey = keyof typeof pluginsConfig;
+
     if (options['target'] === 'node') {
         const transformationsList = options['unsafeTransformations']
             ? nodeTargetAllTransformationsList
             : nodeTargetSafeTransformationsList;
 
         transformationsList.forEach((transformationName) => {
-            pluginsConfig[transformationName as keyof typeof pluginsConfig] = true;
+            if (pluginsConfig[transformationName as ConfigKey] !== undefined) {
+                pluginsConfig[transformationName as ConfigKey] = true;
+            }
         });
     }
+
+    // temporary exclude ARRAY_JOIN transformation
+    pluginsConfig[ARRAY_JOIN as ConfigKey] = false;
 
     return options;
 }
