@@ -14,13 +14,6 @@ export default declare((api, options: PluginOptions) => {
 
     return {
         name: 'babel-plugin-perf-transform-object-expression-with-spread',
-
-        /* eslint-disable */
-        manipulateOptions: (_, parserOpts) => {
-            parserOpts.plugins.push('jsx');
-        },
-        /* eslint-enable */
-
         visitor: {
             Program: getProgramVisitor(),
 

@@ -56,11 +56,8 @@ export function validateOptions(options: PluginOptions): PluginOptions {
             throw new Error(`${PRESET_NAME}: options.transformations must be array of transformation names!`);
         }
 
-        if (options['customTransformations'].length === 0) {
-            throw new Error(`${PRESET_NAME}: options.transformations must be array of transformation names!`);
-        }
-
         if (
+            options['customTransformations'].length > 0 &&
             !options['customTransformations'].every((x) => {
                 return wholeListOfTransformations.includes(x);
             })
