@@ -84,5 +84,7 @@ export function validateOptions(options: PluginOptions): PluginOptions {
         });
     }
 
+    pluginsConfig['Array.join'] = false;
+
     return options;
 }
