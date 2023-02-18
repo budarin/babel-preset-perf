@@ -43,7 +43,7 @@ const config = {
     ...
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env['NODE_ENV'] === 'production') {
     config.presets.unshift([
         'babel-preset-perf',
         {
@@ -120,12 +120,12 @@ Example of using options to configure a preset
                 verbose: true,
                 unsafeTransformations: true, // can and should be equal to true !
                 useStatsServer: {
-                    host: '127.0.0.1';
-                    port: 3000;
-                }
-            }
-        ]
-    ]
+                    host: '127.0.0.1',
+                    port: 3000,
+                },
+            },
+        ],
+    ];
 }
 ```
 
@@ -183,8 +183,8 @@ To do this, you need to configure the parameters of the transformation statistic
 
 ```js
 {
-    host: '127.0.0.1';
-    port: 3000;
+    host: '127.0.0.1',
+    port: 3000
 }
 ```
 
@@ -535,7 +535,7 @@ find the problematic ones and after going through all the modules of the problem
 }
 ```
 
-After finding such "defective" packages, it is advisable to write them an issue that it is bad to do this, as well as inform me so that I can keep a list of such "bad" packages 😊.
+After finding such "defective" packages, it is advisable to write them an issue that it is bad to do this, as well as inform me so that I can keep a list of such "bad" packages.
 
 ## Do you have any ideas for transformations?
 

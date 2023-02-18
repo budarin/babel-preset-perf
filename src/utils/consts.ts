@@ -184,7 +184,7 @@ export const transformationsList = {
     TRANSFORM_LET_CONST_WITH_VAR,
 };
 
-export const defaultStatsServerHost = '0.0.0.0';
+export const defaultStatsServerHost = '127.0.0.1';
 export const defaultStatsServerPort = 3000;
 export const defaultFileName = './babel-plugin-perf.stats.json';
 
