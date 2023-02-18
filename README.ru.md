@@ -118,12 +118,12 @@ return webpackConfig;
                 verbose: true,
                 unsafeTransformations: true, // <= может и должно быть true !
                 useStatsServer: {
-                    host: '127.0.0.1';
-                    port: 3000;
-                }
-            }
-        ]
-    ]
+                    host: '127.0.0.1',
+                    port: 3000,
+                },
+            },
+        ],
+    ];
 }
 ```
 
@@ -183,8 +183,8 @@ return webpackConfig;
 
 ```js
 {
-    host: '127.0.0.1';
-    port: 3000;
+    host: '127.0.0.1',
+    port: 3000
 }
 ```
 
