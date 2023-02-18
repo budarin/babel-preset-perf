@@ -7,6 +7,17 @@ describe('slice.map.join', () => {
     const arr = [1, 2, 3, 4, 5, 6];
     const obj = { i: 1 };
 
+    test('slice.map.join - empty array', () => {
+        const r1 = arraySliceMapJoinHelper([], undefined, undefined, (x) => x + 1, '-');
+
+        const r2 = []
+            .slice()
+            .map((x) => x + 1)
+            .join('-');
+
+        expect(r1).toEqual(r2);
+    });
+
     test('slice.map.join', () => {
         const r1 = arraySliceMapJoinHelper(arr, undefined, undefined, (x) => x + 1, '-');
 

@@ -12,7 +12,7 @@ function arraySliceMapJoinHelperWithMapThis(
     var result = '';
 
     if (start > -1 && end > -1) {
-        result = String(mapPredicate.call(mapThis, array[start], start));
+        result = mapPredicate.call(mapThis, array[start], start) || '';
 
         var i = start;
         while (++i < end) {

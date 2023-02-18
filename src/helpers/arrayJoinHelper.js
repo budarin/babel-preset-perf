@@ -4,7 +4,7 @@
 function arrayJoinHelper(array, argument) {
     if (Array.isArray(array)) {
         var i = 0;
-        var result = array[0];
+        var result = array[0] || '';
         var len = array.length;
         var separator = argument === undefined ? ',' : argument;
 

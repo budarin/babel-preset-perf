@@ -14,6 +14,22 @@ describe('map.filter.join', () => {
         j: 0,
     };
 
+    test('arr.map.filter.join - empty array', () => {
+        expect(
+            []
+                .map((x) => x + 1)
+                .filter((x) => x > 0)
+                .join(' '),
+        ).toEqual(
+            arrayMapFilterJoinHelper(
+                [],
+                (x) => x + 1,
+                (x) => x > 0,
+                ' ',
+            ),
+        );
+    });
+
     test('arr.map.filter.join', () => {
         expect(
             arr

@@ -6,6 +6,10 @@ const { arrayMapJoinHelperWithMapThis } = require('../../dist/helpers/arrayMapJo
 describe('map.join', () => {
     const arr = [1, 2, 3];
 
+    test('arr.map.join - empty array', () => {
+        expect([].map((x) => x + 1).join(' ')).toEqual(arrayMapJoinHelper([], (x) => x + 1, ' '));
+    });
+
     test('arr.map.join', () => {
         expect(arr.map((x) => x + 1).join(' ')).toEqual(arrayMapJoinHelper(arr, (x) => x + 1, ' '));
     });
