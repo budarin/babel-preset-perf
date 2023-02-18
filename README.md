@@ -535,7 +535,7 @@ find the problematic ones and after going through all the modules of the problem
 }
 ```
 
-After finding such "defective" packages, it is advisable to write them an issue that it is bad to do this, as well as inform me so that I can keep a list of such "bad" packages 😊.
+After finding such "defective" packages, it is advisable to write them an issue that it is bad to do this, as well as inform me so that I can keep a list of such "bad" packages.
 
 ## Do you have any ideas for transformations?
 
