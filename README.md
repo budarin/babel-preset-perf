@@ -207,6 +207,16 @@ after stopping the statistics collection server, the results will be written to 
 
 I recommend downloading the file to your device (or view the raw file in a browser with the JSONView extension installed) and looking at it carefully - there is a lot of useful and interesting information there.
 
+## Magical Comments
+
+### `@babel-preset-perf-ignore`
+
+Written at the top of the module - prevents the transforming of the entire module.
+
+### `@babel-preset-perf-disable-next-line`
+
+Prevents transpilation of the statement following it.
+
 ## Transformations
 
 Below is a list of transformations that are used in the preset and which I discovered in my product bundle.
