@@ -27,7 +27,7 @@ export function sendStatistic(plugin: PluginPass, endpoint: string, message: obj
         const signal = controller.signal;
         const timer = setTimeout(() => {
             controller.abort();
-        }, 500);
+        }, 30000);
 
         void fetch(`http://${host}:${port}/${endpoint}`, {
             method: 'POST',
