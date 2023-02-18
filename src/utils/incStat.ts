@@ -1,8 +1,13 @@
 import { NodePath, PluginPass } from '@babel/core';
 
+import { helpersPath } from './helpersPath';
 import { sendStatistic } from './sendStatistic';
 
 export function incStat(plugin: PluginPass, path: NodePath, transformation: string): void {
+    if (transformation === 'ignore transpile modules' && plugin.filename?.includes(helpersPath)) {
+        return;
+    }
+
     const { useStatsServer } = plugin.opts as PluginOptions;
 
     if (useStatsServer) {

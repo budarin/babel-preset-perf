@@ -5,7 +5,7 @@ function arraySliceMapJoinHelper(array, start = 0, end = array.length, mapPredic
     var result = '';
 
     if (start > -1 && end > -1) {
-        result = String(mapPredicate(array[start], start));
+        result = mapPredicate(array[start], start) || '';
 
         var i = start;
         while (++i < end) {

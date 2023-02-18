@@ -7,6 +7,13 @@ describe('filter.join', () => {
     const arr = [1, 2, 3];
     const obj = { i: 0 };
 
+    test('arr.filter.join - empty array', () => {
+        const r1 = [].filter((x) => x > 0.5).join('=');
+        const r2 = arrayFilterJoinHelper([], (x) => x > 0.5, '=');
+
+        expect(r1).toEqual(r2);
+    });
+
     test('arr.filter.join', () => {
         const r1 = arr.filter((x) => x > 0.5).join('=');
         const r2 = arrayFilterJoinHelper(arr, (x) => x > 0.5, '=');
