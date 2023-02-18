@@ -41,7 +41,7 @@ const config = {
     ...
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env['NODE_ENV'] === 'production') {
     config.presets.unshift([
         'babel-preset-perf',
         {
@@ -84,7 +84,7 @@ if (process.env.NODE_ENV === 'production') {
                     ]
                 ],
                 cacheDirectory: true,
-                cacheIdentifier: 'server-npm' // <= укажите свое уникальное имя для кэша трансформаций
+                cacheIdentifier: 'server-npm' // <= укажите свое уникальное имя для кэша трансформаций для каждой среды свое
             }
         }
     })
@@ -116,7 +116,7 @@ return webpackConfig;
                 name: 'server',
                 target: 'node',
                 verbose: true,
-                unsafeTransformations: true, // can and should be equal to true !
+                unsafeTransformations: true, // <= может и должно быть true !
                 useStatsServer: {
                     host: '127.0.0.1';
                     port: 3000;

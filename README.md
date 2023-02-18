@@ -43,7 +43,7 @@ const config = {
     ...
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env['NODE_ENV'] === 'production') {
     config.presets.unshift([
         'babel-preset-perf',
         {
