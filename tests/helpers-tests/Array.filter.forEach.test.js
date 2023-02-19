@@ -11,6 +11,27 @@ describe('filter.forEach', () => {
     const arr = [1, 2, 3];
     const obj = { i: 1 };
 
+    test('arr.filter.foreach - empty array', () => {
+        let r1 = 0,
+            r2 = 0;
+
+        []
+            .filter((x) => x > 1)
+            .forEach((x) => {
+                r1 = r1 + x;
+            });
+
+        arrayFilterForEachHelper(
+            [],
+            (x) => x > 1,
+            (x) => {
+                r2 = r2 + x;
+            },
+        );
+
+        expect(r1).toEqual(r2);
+    });
+
     test('arr.filter.foreach', () => {
         let r1 = 0,
             r2 = 0;

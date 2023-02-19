@@ -5,6 +5,13 @@ const { objectEntriesReduceHelper } = require('../../dist/helpers/objectEntriesR
 describe('Object.entries', () => {
     const obj = { one: 1, two: 2 };
 
+    test('Object.entries(obj).reduce - empty object', () => {
+        const r1 = objectEntriesReduceHelper({}, (acc, [key, val], i) => acc + key.length + String(val).length + i, 0);
+        const r2 = Object.entries({}).reduce((acc, [key, val], i) => acc + key.length + String(val).length + i, 0);
+
+        expect(r1).toStrictEqual(r2);
+    });
+
     test('Object.entries(obj).reduce', () => {
         const r1 = objectEntriesReduceHelper(obj, (acc, [key, val], i) => acc + key.length + String(val).length + i, 0);
         const r2 = Object.entries(obj).reduce((acc, [key, val], i) => acc + key.length + String(val).length + i, 0);

@@ -8,6 +8,21 @@ const {
 describe('Object.entries', () => {
     const obj = { one: 1, two: 2 };
 
+    test('Object.entries(obj).forEach - empty object', () => {
+        let r1 = 0,
+            r2 = 0;
+
+        objectEntriesForEachHelper({}, ([key, value], i) => {
+            r1 = r1 + key.length + String(value).length + i;
+        });
+
+        Object.entries({}).forEach(([key, value], i) => {
+            r2 = r2 + key.length + String(value).length + i;
+        });
+
+        expect(r1).toStrictEqual(r2);
+    });
+
     test('Object.entries(obj).forEach', () => {
         let r1 = 0,
             r2 = 0;

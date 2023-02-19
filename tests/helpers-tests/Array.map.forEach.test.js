@@ -11,6 +11,27 @@ describe('map.forEach', () => {
     const arr = [1, 2, 3];
     const obj = { i: 1 };
 
+    test('arr.map.foreach - empty array', () => {
+        let r1 = 0,
+            r2 = 0;
+
+        []
+            .map((x) => x)
+            .forEach((x) => {
+                r1 = r1 + x;
+            });
+
+        arrayMapForEachHelper(
+            [],
+            (x) => x,
+            (x) => {
+                r2 = r2 + x;
+            },
+        );
+
+        expect(r1).toEqual(r2);
+    });
+
     test('arr.map.foreach', () => {
         let r1 = 0,
             r2 = 0;
