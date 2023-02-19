@@ -1,12 +1,12 @@
 {
-    "demo-config": {
+    "unamed_config_9b60d734-0539-4583-9206-1eec64815b77": {
         "summary": {
             "transformations": {
-                "total": 330,
-                "modules": 28,
+                "total": 331,
+                "modules": 29,
                 "transformationTypes": 28,
                 "byTransformations": {
-                    "Variable transform const and let with var": 189,
+                    "Variable transform const and let with var": 191,
                     "Array destructuring": 10,
                     "Array.filter.forEach": 4,
                     "Array.filter.join": 5,
@@ -15,7 +15,7 @@
                     "Array.filter.map.join": 4,
                     "Array.filter.map": 5,
                     "Array.map.reduce": 5,
-                    "Array.filter.reduce": 4,
+                    "Array.filter.reduce": 3,
                     "Array.map": 8,
                     "Array.join unfold": 6,
                     "Array.join": 6,
@@ -54,13 +54,13 @@
         },
         "transformations": {
             "byTransformation": {
-                "total": 330,
+                "total": 331,
                 "transformationTypes": 28,
                 "transformations": {
                     "Variable transform const and let with var": {
-                        "total": 189,
+                        "total": 191,
                         "byModules": {
-                            "./tests/demo/Array destructuring.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array destructuring.js": [
                                 {
                                     "code": "const array = [1, 2, 3, 4, 5];",
                                     "line": 5,
@@ -122,7 +122,7 @@
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.filter.fiorEach.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.fiorEach.js": [
                                 {
                                     "code": "const arr = [1, 2, 3];",
                                     "line": 2,
@@ -169,27 +169,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterForEachHelper: _affeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterForEachHelperWithForEachThis: _affehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterForEachHelperWithFilterAndForEachThis: _affehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterAndForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterForEachHelperWithFilterThis: _affehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.filter.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.join.js": [
                                 {
                                     "code": "const arr = [1, 2, 3];",
                                     "line": 2,
@@ -216,41 +216,41 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterJoinHelperWithFilterThis: _afjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.filter.length as boolean.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.length as boolean.js": [
                                 {
                                     "code": "const obj = { i: 1 };",
                                     "line": 64,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.filter.length.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.length.js": [
                                 {
                                     "code": "const arr = [1, 2, 3, 4, 5];",
                                     "line": 1,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.filter.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.map.join.js": [
                                 {
                                     "code": "const arr = [1, 2, 3];",
                                     "line": 2,
@@ -262,27 +262,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterMapJoinHelper: _afmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterMapJoinHelperWithFilterThis: _afmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterMapJoinHelperWithMapThis: _afmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterMapJoinHelperWithFilterAndMapThis: _afmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterAndMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.filter.map.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.map.js": [
                                 {
                                     "code": "const arr = [1, 2, 3];",
                                     "line": 2,
@@ -294,27 +294,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterMapHelperWithFilterThis: _afmtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterMapHelperWithMapThis: _afmtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterMapHelperWithFilterAndMapThis: _afmtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterAndMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.filter.reduce.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.reduce.js": [
                                 {
                                     "code": "const func2 = require('func2');",
                                     "line": 1,
@@ -361,27 +361,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterReduceHelper: _afrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterReduceHelperWithFilterThis: _afrhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.join unfold.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.join unfold.js": [
                                 {
                                     "code": "const c = [1].join();",
                                     "line": 1,
@@ -413,7 +413,7 @@
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.join.js": [
                                 {
                                     "code": "const path = require('path');",
                                     "line": 1,
@@ -425,19 +425,19 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map unfold.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map unfold.js": [
                                 {
                                     "code": "const a = [\n    'Int8',\n    'Uint8',\n    'Uint8Clamped',\n    'Int16',\n    'Uint16',\n    'Int32',\n    'Uint32',\n    'Float32',\n    'Float64',\n    'BigInt64',\n    'BigUint64',\n].map((x) => x + 'Array');",
                                     "line": 1,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp2 = s => s(root);",
                                     "line": 0,
                                     "collumn": 0
                                 },
@@ -467,27 +467,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp = x => x + 'Array';",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp3 = x => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp4 = (x, i) => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp5 = function (x, i) {\n  return x + i;\n};",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.filter.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.join.js": [
                                 {
                                     "code": "const func2 = require('func2');",
                                     "line": 1,
@@ -529,27 +529,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapFilterJoinHelperWithFilterThis: _amfjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapFilterJoinHelperWithMapThis: _amfjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapFilterJoinHelperWithMapAndFilterThis: _amfjhwmft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapAndFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.filter.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js": [
                                 {
                                     "code": "const func2 = require('func2');",
                                     "line": 1,
@@ -591,27 +591,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapFilterHelperWithFilterThis: _amfhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapFilterHelperWithMapAndFilterThis: _amfhwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithMapAndFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.fiorEach.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.fiorEach.js": [
                                 {
                                     "code": "const arr = [1, 2, 3];",
                                     "line": 2,
@@ -653,27 +653,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapForEachHelper: _amfeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapForEachHelperWithForEachThis: _amfehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapForEachHelperWithMapAndForEachThis: _amfehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapAndForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapForEachHelperWithMapThis: _amfehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.join unfold.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js": [
                                 {
                                     "code": "const f = (x, i) => x + i;",
                                     "line": 17,
@@ -690,7 +690,7 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp5 = (x, i, a) => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
@@ -705,32 +705,32 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp = x => x;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp2 = (x, i) => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp3 = function (x, i) {\n  return x + i;\n};",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var _mp4 = (x, i, a) => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js": [
                                 {
                                     "code": "const func2 = require('func2');",
                                     "line": 1,
@@ -767,27 +767,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapJoinHelper: _amjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapJoinHelperWithMapThis: _amjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.js": [
                                 {
                                     "code": "const func2 = require('func2');",
                                     "line": 1,
@@ -824,17 +824,17 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.reduce.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.reduce.js": [
                                 {
                                     "code": "const func2 = require('func2');",
                                     "line": 1,
@@ -871,22 +871,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arrayMapReduceHelperWithMapThis: _amrhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.slice.every.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.slice.every.js": [
                                 {
                                     "code": "const nums = [1, 2, 3];",
                                     "line": 1,
@@ -898,17 +898,17 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arraySliceEveryHelper: _aseh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arraySliceEveryHelperWithEveryThis: _asehwet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelperWithEveryThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.slice.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.slice.map.join.js": [
                                 {
                                     "code": "const arr = [1, 2, 3, 4, 5];",
                                     "line": 1,
@@ -930,36 +930,24 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arraySliceMapJoinHelper: _asmjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  arraySliceMapJoinHelperWithMapThis: _asmjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/index.js": [
-                                {
-                                    "code": "const z1 = arr.filter(func).reduce((acc, x, i, a) => acc + x + i, 0);",
-                                    "line": 4,
-                                    "collumn": 0
-                                },
-                                {
-                                    "code": "Inserted helper declatartion",
-                                    "line": 0,
-                                    "collumn": 0
-                                }
-                            ],
-                            "./tests/demo/Object expression with spread.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object expression with spread.js": [
                                 {
                                     "code": "const x = { a: { ...obj, a: 1, c: 2, ...b, d: 3 }, e: { ...c }, f };",
                                     "line": 5,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Object.entries.filter.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.filter.map.join.js": [
                                 {
                                     "code": "const o = { i: 1 };",
                                     "line": 6,
@@ -971,68 +959,68 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectEntriesFilterMapJoinHelper: _oefmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithFilterThis: _oefmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithMapThis: _oefmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithFilterAndMapThis: _oefmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterAndMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Object.entries.forEach.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.forEach.js": [
                                 {
                                     "code": "const obj = { i: 1 };",
                                     "line": 6,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectEntriesForEachHelper: _oefeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectEntriesForEachHelperWithForEachThis: _oefehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelperWithForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Object.entries.map.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.map.js": [
                                 {
                                     "code": "const obj = { i: 1 };",
                                     "line": 3,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectEntriesMapHelper: _oemh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectEntriesMapHelperWithMapThis: _oemhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Object.entries.reduce.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.reduce.js": [
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectEntriesReduceHelper: _oerh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesReduceHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Object.values[0].js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.values[0].js": [
                                 {
                                     "code": "const objs = { a: 1, b: 2 };",
                                     "line": 1,
@@ -1049,15 +1037,39 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  objectValuesFirstItemHelper: _ovfih\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectValuesFirstItemHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/String.slice.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/String.slice.js": [
                                 {
-                                    "code": "Inserted helper declatartion",
+                                    "code": "generated: => var {\n  stringSliceHelper: _ssh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/stringSliceHelper\");",
                                     "line": 0,
+                                    "collumn": 0
+                                }
+                            ],
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Transform const and let with var.js": [
+                                {
+                                    "code": "let s = '';",
+                                    "line": 1,
+                                    "collumn": 0
+                                },
+                                {
+                                    "code": "const a = 1;",
+                                    "line": 2,
+                                    "collumn": 0
+                                },
+                                {
+                                    "code": "for (let i = 0; i < 100; i++) {\n    console.log(i);\n}",
+                                    "line": 4,
+                                    "collumn": 5
+                                }
+                            ],
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/index.js": [
+                                {
+                                    "code": "const a = 1;",
+                                    "line": 1,
                                     "collumn": 0
                                 }
                             ]
@@ -1066,7 +1078,7 @@
                     "Array destructuring": {
                         "total": 10,
                         "byModules": {
-                            "./tests/demo/Array destructuring.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array destructuring.js": [
                                 {
                                     "code": "const [a1, b1] = array;",
                                     "line": 7,
@@ -1123,7 +1135,7 @@
                     "Array.filter.forEach": {
                         "total": 4,
                         "byModules": {
-                            "./tests/demo/Array.filter.fiorEach.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.fiorEach.js": [
                                 {
                                     "code": "const y = arr.filter(func).forEach(func3);",
                                     "line": 13,
@@ -1150,7 +1162,7 @@
                     "Array.filter.join": {
                         "total": 5,
                         "byModules": {
-                            "./tests/demo/Array.filter.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.join.js": [
                                 {
                                     "code": "const y = arr.filter(func3).join(' ');",
                                     "line": 9,
@@ -1167,7 +1179,7 @@
                                     "collumn": 8
                                 }
                             ],
-                            "./tests/demo/Array.map.filter.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.join.js": [
                                 {
                                     "code": "const y = arr.map(func1).filter(func3).join(' ');",
                                     "line": 12,
@@ -1184,7 +1196,7 @@
                     "Array.filter.length as boolean": {
                         "total": 14,
                         "byModules": {
-                            "./tests/demo/Array.filter.length as boolean.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.length as boolean.js": [
                                 {
                                     "code": "arr.filter(Boolean).length ? 1 : 0;",
                                     "line": 2,
@@ -1261,7 +1273,7 @@
                     "Array.filter.length": {
                         "total": 6,
                         "byModules": {
-                            "./tests/demo/Array.filter.length as boolean.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.length as boolean.js": [
                                 {
                                     "code": "arr.filter(Boolean).length;",
                                     "line": 11,
@@ -1288,7 +1300,7 @@
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.filter.length.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.length.js": [
                                 {
                                     "code": "arr.filter((x) => x > 0.5).length;",
                                     "line": 3,
@@ -1300,7 +1312,7 @@
                     "Array.filter.map.join": {
                         "total": 4,
                         "byModules": {
-                            "./tests/demo/Array.filter.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.map.join.js": [
                                 {
                                     "code": "arr.filter((x) => x > 0.5)\n    .map((x, i) => x + i)\n    .join(' = ');",
                                     "line": 4,
@@ -1327,7 +1339,7 @@
                     "Array.filter.map": {
                         "total": 5,
                         "byModules": {
-                            "./tests/demo/Array.filter.map.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.map.js": [
                                 {
                                     "code": "arr.filter((x) => x > 0.5).map((x, i) => x + i);",
                                     "line": 4,
@@ -1349,7 +1361,7 @@
                                     "collumn": 4
                                 }
                             ],
-                            "./tests/demo/Array.map.filter.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js": [
                                 {
                                     "code": "return [...a, ...b]\n            .map(function (x) {\n                return x + this.i;\n            }, obj)\n            .filter((x) => x > 0.5)\n            .map(func);",
                                     "line": 27,
@@ -1361,14 +1373,14 @@
                     "Array.map.reduce": {
                         "total": 5,
                         "byModules": {
-                            "./tests/demo/Array.filter.reduce.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.reduce.js": [
                                 {
                                     "code": "const y = arr.map(func1).reduce((acc, x) => acc + x, 0);",
                                     "line": 8,
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.reduce.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.reduce.js": [
                                 {
                                     "code": "const y = arr.map(func1).reduce((acc, x) => acc + x, 0);",
                                     "line": 8,
@@ -1393,9 +1405,9 @@
                         }
                     },
                     "Array.filter.reduce": {
-                        "total": 4,
+                        "total": 3,
                         "byModules": {
-                            "./tests/demo/Array.filter.reduce.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.reduce.js": [
                                 {
                                     "code": "const x = arr1.filter((x) => x > 1).reduce((acc, x) => acc + x, 0);",
                                     "line": 12,
@@ -1411,41 +1423,34 @@
                                     "line": 40,
                                     "collumn": 0
                                 }
-                            ],
-                            "./tests/demo/index.js": [
-                                {
-                                    "code": "const z1 = arr.filter(func).reduce((acc, x, i, a) => acc + x + i, 0);",
-                                    "line": 4,
-                                    "collumn": 0
-                                }
                             ]
                         }
                     },
                     "Array.map": {
                         "total": 8,
                         "byModules": {
-                            "./tests/demo/Array.filter.reduce.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.reduce.js": [
                                 {
                                     "code": "return [...a, ...b]\n            .map((x, i) => x * i)\n            .filter(func)\n            .reduce((acc, x) => acc + x, 0);",
                                     "line": 21,
                                     "collumn": 8
                                 }
                             ],
-                            "./tests/demo/Array.map.filter.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js": [
                                 {
                                     "code": "return [...a, ...b]\n            .map(function (x) {\n                return x + this.i;\n            }, obj)\n            .filter((x) => x > 0.5)\n            .map(func);",
                                     "line": 27,
                                     "collumn": 8
                                 }
                             ],
-                            "./tests/demo/Array.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js": [
                                 {
                                     "code": "return [...a, ...b]\n            .map((x, i) => x * i)\n            .map(func)\n            .join('--');",
                                     "line": 20,
                                     "collumn": 8
                                 }
                             ],
-                            "./tests/demo/Array.map.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.js": [
                                 {
                                     "code": "const x = arr.map(String);",
                                     "line": 11,
@@ -1467,7 +1472,7 @@
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.reduce.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.reduce.js": [
                                 {
                                     "code": "return [...a, ...b]\n            .map((x, i) => x * i)\n            .map(func)\n            .reduce((acc, x) => acc + x, 0);",
                                     "line": 20,
@@ -1479,7 +1484,7 @@
                     "Array.join unfold": {
                         "total": 6,
                         "byModules": {
-                            "./tests/demo/Array.join unfold.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.join unfold.js": [
                                 {
                                     "code": "const c = [1].join();",
                                     "line": 1,
@@ -1516,7 +1521,7 @@
                     "Array.join": {
                         "total": 6,
                         "byModules": {
-                            "./tests/demo/Array.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.join.js": [
                                 {
                                     "code": "arr.join();",
                                     "line": 5,
@@ -1528,7 +1533,7 @@
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.join unfold.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js": [
                                 {
                                     "code": "[1, 2, 3].map((x, i, a) => x + a[i]).join();",
                                     "line": 28,
@@ -1540,7 +1545,7 @@
                                     "collumn": 0
                                 }
                             ],
-                            "./tests/demo/Array.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js": [
                                 {
                                     "code": "const y = arr.map(func1).join('|');",
                                     "line": 8,
@@ -1557,7 +1562,7 @@
                     "Array.map unfold": {
                         "total": 11,
                         "byModules": {
-                            "./tests/demo/Array.map unfold.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map unfold.js": [
                                 {
                                     "code": "const a = [\n    'Int8',\n    'Uint8',\n    'Uint8Clamped',\n    'Int16',\n    'Uint16',\n    'Int32',\n    'Uint32',\n    'Float32',\n    'Float64',\n    'BigInt64',\n    'BigUint64',\n].map((x) => x + 'Array');",
                                     "line": 1,
@@ -1619,7 +1624,7 @@
                     "Array.map.filter.join": {
                         "total": 3,
                         "byModules": {
-                            "./tests/demo/Array.map.filter.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.join.js": [
                                 {
                                     "code": "const x = arr\n    .map(String)\n    .filter(function (x) {\n        return x > this.i;\n    }, obj)\n    .join();",
                                     "line": 15,
@@ -1641,7 +1646,7 @@
                     "Array.map.filter": {
                         "total": 2,
                         "byModules": {
-                            "./tests/demo/Array.map.filter.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js": [
                                 {
                                     "code": "const x = arr.map(String).filter(function (x) {\n    return x > this.i;\n}, obj);",
                                     "line": 15,
@@ -1658,7 +1663,7 @@
                     "Array.map.forEach": {
                         "total": 4,
                         "byModules": {
-                            "./tests/demo/Array.map.fiorEach.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.fiorEach.js": [
                                 {
                                     "code": "const y = arr.map((x) => x).forEach(func3);",
                                     "line": 11,
@@ -1685,7 +1690,7 @@
                     "Array.map.join unfold": {
                         "total": 9,
                         "byModules": {
-                            "./tests/demo/Array.map.join unfold.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js": [
                                 {
                                     "code": "[1, 2, 3].map(String).join();",
                                     "line": 1,
@@ -1737,7 +1742,7 @@
                     "Array.map.join": {
                         "total": 3,
                         "byModules": {
-                            "./tests/demo/Array.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js": [
                                 {
                                     "code": "const x = arr.map(String).join();",
                                     "line": 11,
@@ -1759,7 +1764,7 @@
                     "Array.slice.every": {
                         "total": 7,
                         "byModules": {
-                            "./tests/demo/Array.slice.every.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.slice.every.js": [
                                 {
                                     "code": "nums.slice().every((x, i) => x > 1);",
                                     "line": 3,
@@ -1801,7 +1806,7 @@
                     "Array.slice.map.join": {
                         "total": 7,
                         "byModules": {
-                            "./tests/demo/Array.slice.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.slice.map.join.js": [
                                 {
                                     "code": "arr.slice(start, end)\n    .map((x, i) => x + i)\n    .join(' ');",
                                     "line": 6,
@@ -1843,7 +1848,7 @@
                     "Object expression with spread": {
                         "total": 1,
                         "byModules": {
-                            "./tests/demo/Object expression with spread.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object expression with spread.js": [
                                 {
                                     "code": "const x = { a: { ...obj, a: 1, c: 2, ...b, d: 3 }, e: { ...c }, f };",
                                     "line": 5,
@@ -1855,7 +1860,7 @@
                     "Object.entries.filter.map.join": {
                         "total": 4,
                         "byModules": {
-                            "./tests/demo/Object.entries.filter.map.join.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.filter.map.join.js": [
                                 {
                                     "code": "Object.entries(obj)\n    .filter(([key, val], i) => key.length > 1 && val > -1)\n    .map(([key, val]) => key.length + val)\n    .join('-');",
                                     "line": 1,
@@ -1882,7 +1887,7 @@
                     "Object.entries.forEach": {
                         "total": 2,
                         "byModules": {
-                            "./tests/demo/Object.entries.forEach.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.forEach.js": [
                                 {
                                     "code": "Object.entries(smallObj).forEach(([key, val], i) => {\n    res = key.length + String(val).length + i;\n});",
                                     "line": 1,
@@ -1899,7 +1904,7 @@
                     "Object.entries.map": {
                         "total": 2,
                         "byModules": {
-                            "./tests/demo/Object.entries.map.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.map.js": [
                                 {
                                     "code": "Object.entries(smallObj).map(([key, val], i) => key.length + String(val).length + i);",
                                     "line": 1,
@@ -1916,7 +1921,7 @@
                     "Object.entries.reduce": {
                         "total": 2,
                         "byModules": {
-                            "./tests/demo/Object.entries.reduce.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.reduce.js": [
                                 {
                                     "code": "Object.entries(obj).reduce((acc, [key, val], i) => acc + key.length + String(val).length + i, 0);",
                                     "line": 1,
@@ -1933,7 +1938,7 @@
                     "Object.values[0]": {
                         "total": 2,
                         "byModules": {
-                            "./tests/demo/Object.values[0].js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.values[0].js": [
                                 {
                                     "code": "const v = Object.values(obj)[0];",
                                     "line": 3,
@@ -1950,7 +1955,7 @@
                     "String.slice": {
                         "total": 5,
                         "byModules": {
-                            "./tests/demo/String.slice.js": [
+                            "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/String.slice.js": [
                                 {
                                     "code": "'String'.slice(1, 5);",
                                     "line": 1,
@@ -1982,9 +1987,9 @@
                 }
             },
             "byModules": {
-                "total": 28,
+                "total": 29,
                 "modules": {
-                    "./tests/demo/Array destructuring.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array destructuring.js": {
                         "total": 22,
                         "byTransformations": [
                             {
@@ -2121,7 +2126,7 @@
                             }
                         ]
                     },
-                    "./tests/demo/Array.filter.fiorEach.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.fiorEach.js": {
                         "total": 17,
                         "byTransformations": [
                             {
@@ -2203,32 +2208,32 @@
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterForEachHelper: _affeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterForEachHelperWithForEachThis: _affehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterForEachHelperWithFilterAndForEachThis: _affehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterAndForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterForEachHelperWithFilterThis: _affehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.filter.join.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.join.js": {
                         "total": 10,
                         "byTransformations": [
                             {
@@ -2280,20 +2285,20 @@
                                 "transformation": "Array.filter.join"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterJoinHelperWithFilterThis: _afjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.filter.length as boolean.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.length as boolean.js": {
                         "total": 21,
                         "byTransformations": [
                             {
@@ -2417,14 +2422,14 @@
                                 "transformation": "Array.filter.length as boolean"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.filter.length.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.length.js": {
                         "total": 3,
                         "byTransformations": [
                             {
@@ -2440,14 +2445,14 @@
                                 "transformation": "Array.filter.length"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.filter.map.join.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.map.join.js": {
                         "total": 10,
                         "byTransformations": [
                             {
@@ -2487,32 +2492,32 @@
                                 "transformation": "Array.filter.map.join"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterMapJoinHelper: _afmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterMapJoinHelperWithFilterThis: _afmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterMapJoinHelperWithMapThis: _afmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterMapJoinHelperWithFilterAndMapThis: _afmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterAndMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.filter.map.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.map.js": {
                         "total": 10,
                         "byTransformations": [
                             {
@@ -2552,32 +2557,32 @@
                                 "transformation": "Array.filter.map"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterMapHelperWithFilterThis: _afmtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterMapHelperWithMapThis: _afmtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterMapHelperWithFilterAndMapThis: _afmtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterAndMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.filter.reduce.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.reduce.js": {
                         "total": 18,
                         "byTransformations": [
                             {
@@ -2665,32 +2670,32 @@
                                 "transformation": "Array.filter.reduce"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterReduceHelper: _afrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterReduceHelperWithFilterThis: _afrhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.join unfold.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.join unfold.js": {
                         "total": 12,
                         "byTransformations": [
                             {
@@ -2767,7 +2772,7 @@
                             }
                         ]
                     },
-                    "./tests/demo/Array.join.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.join.js": {
                         "total": 5,
                         "byTransformations": [
                             {
@@ -2795,14 +2800,14 @@
                                 "transformation": "Array.join"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.map unfold.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map unfold.js": {
                         "total": 22,
                         "byTransformations": [
                             {
@@ -2824,7 +2829,7 @@
                                 "transformation": "Array.map unfold"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp2 = s => s(root);",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2914,32 +2919,32 @@
                                 "transformation": "Array.map unfold"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp = x => x + 'Array';",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp3 = x => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp4 = (x, i) => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp5 = function (x, i) {\n  return x + i;\n};",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.map.filter.join.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.join.js": {
                         "total": 17,
                         "byTransformations": [
                             {
@@ -3021,32 +3026,32 @@
                                 "transformation": "Array.map.filter.join"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapFilterJoinHelperWithFilterThis: _amfjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapFilterJoinHelperWithMapThis: _amfjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapFilterJoinHelperWithMapAndFilterThis: _amfjhwmft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapAndFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.map.filter.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js": {
                         "total": 16,
                         "byTransformations": [
                             {
@@ -3122,32 +3127,32 @@
                                 "transformation": "Array.map.filter"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapFilterHelperWithFilterThis: _amfhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapFilterHelperWithMapAndFilterThis: _amfhwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithMapAndFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.map.fiorEach.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.fiorEach.js": {
                         "total": 16,
                         "byTransformations": [
                             {
@@ -3223,32 +3228,32 @@
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapForEachHelper: _amfeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapForEachHelperWithForEachThis: _amfehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapForEachHelperWithMapAndForEachThis: _amfehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapAndForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapForEachHelperWithMapThis: _amfehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.map.join unfold.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js": {
                         "total": 22,
                         "byTransformations": [
                             {
@@ -3330,7 +3335,7 @@
                                 "transformation": "Array.map.join unfold"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp5 = (x, i, a) => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3354,38 +3359,38 @@
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp = x => x;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp2 = (x, i) => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp3 = function (x, i) {\n  return x + i;\n};",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var _mp4 = (x, i, a) => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.map.join.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js": {
                         "total": 17,
                         "byTransformations": [
                             {
@@ -3467,32 +3472,32 @@
                                 "transformation": "Array.map.join"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapJoinHelper: _amjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapJoinHelperWithMapThis: _amjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.map.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.js": {
                         "total": 13,
                         "byTransformations": [
                             {
@@ -3562,20 +3567,20 @@
                                 "transformation": "Array.map"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.map.reduce.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.reduce.js": {
                         "total": 15,
                         "byTransformations": [
                             {
@@ -3651,26 +3656,26 @@
                                 "transformation": "Array.map.reduce"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arrayMapReduceHelperWithMapThis: _amrhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.slice.every.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.slice.every.js": {
                         "total": 11,
                         "byTransformations": [
                             {
@@ -3728,20 +3733,20 @@
                                 "transformation": "Array.slice.every"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arraySliceEveryHelper: _aseh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arraySliceEveryHelperWithEveryThis: _asehwet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelperWithEveryThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Array.slice.map.join.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.slice.map.join.js": {
                         "total": 13,
                         "byTransformations": [
                             {
@@ -3811,43 +3816,20 @@
                                 "transformation": "Array.slice.map.join"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arraySliceMapJoinHelper: _asmjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
-                                "line": 0,
-                                "collumn": 0,
-                                "transformation": "Variable transform const and let with var"
-                            }
-                        ]
-                    },
-                    "./tests/demo/index.js": {
-                        "total": 3,
-                        "byTransformations": [
-                            {
-                                "code": "const z1 = arr.filter(func).reduce((acc, x, i, a) => acc + x + i, 0);",
-                                "line": 4,
-                                "collumn": 0,
-                                "transformation": "Array.filter.reduce"
-                            },
-                            {
-                                "code": "const z1 = arr.filter(func).reduce((acc, x, i, a) => acc + x + i, 0);",
-                                "line": 4,
-                                "collumn": 0,
-                                "transformation": "Variable transform const and let with var"
-                            },
-                            {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  arraySliceMapJoinHelperWithMapThis: _asmjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Object expression with spread.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object expression with spread.js": {
                         "total": 2,
                         "byTransformations": [
                             {
@@ -3864,7 +3846,7 @@
                             }
                         ]
                     },
-                    "./tests/demo/Object.entries.filter.map.join.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.filter.map.join.js": {
                         "total": 10,
                         "byTransformations": [
                             {
@@ -3904,32 +3886,32 @@
                                 "transformation": "Object.entries.filter.map.join"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectEntriesFilterMapJoinHelper: _oefmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithFilterThis: _oefmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithMapThis: _oefmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithFilterAndMapThis: _oefmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterAndMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Object.entries.forEach.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.forEach.js": {
                         "total": 5,
                         "byTransformations": [
                             {
@@ -3951,20 +3933,20 @@
                                 "transformation": "Object.entries.forEach"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectEntriesForEachHelper: _oefeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectEntriesForEachHelperWithForEachThis: _oefehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelperWithForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Object.entries.map.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.map.js": {
                         "total": 5,
                         "byTransformations": [
                             {
@@ -3986,20 +3968,20 @@
                                 "transformation": "Object.entries.map"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectEntriesMapHelper: _oemh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectEntriesMapHelperWithMapThis: _oemhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Object.entries.reduce.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.reduce.js": {
                         "total": 3,
                         "byTransformations": [
                             {
@@ -4015,14 +3997,14 @@
                                 "transformation": "Object.entries.reduce"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectEntriesReduceHelper: _oerh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesReduceHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/Object.values[0].js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.values[0].js": {
                         "total": 6,
                         "byTransformations": [
                             {
@@ -4056,14 +4038,14 @@
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  objectValuesFirstItemHelper: _ovfih\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectValuesFirstItemHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
                         ]
                     },
-                    "./tests/demo/String.slice.js": {
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/String.slice.js": {
                         "total": 6,
                         "byTransformations": [
                             {
@@ -4097,8 +4079,42 @@
                                 "transformation": "String.slice"
                             },
                             {
-                                "code": "Inserted helper declatartion",
+                                "code": "generated: => var {\n  stringSliceHelper: _ssh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/stringSliceHelper\");",
                                 "line": 0,
+                                "collumn": 0,
+                                "transformation": "Variable transform const and let with var"
+                            }
+                        ]
+                    },
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Transform const and let with var.js": {
+                        "total": 3,
+                        "byTransformations": [
+                            {
+                                "code": "let s = '';",
+                                "line": 1,
+                                "collumn": 0,
+                                "transformation": "Variable transform const and let with var"
+                            },
+                            {
+                                "code": "const a = 1;",
+                                "line": 2,
+                                "collumn": 0,
+                                "transformation": "Variable transform const and let with var"
+                            },
+                            {
+                                "code": "for (let i = 0; i < 100; i++) {\n    console.log(i);\n}",
+                                "line": 4,
+                                "collumn": 5,
+                                "transformation": "Variable transform const and let with var"
+                            }
+                        ]
+                    },
+                    "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/index.js": {
+                        "total": 1,
+                        "byTransformations": [
+                            {
+                                "code": "const a = 1;",
+                                "line": 1,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             }
@@ -4112,7 +4128,7 @@
             "byTransformation": {
                 "Array.filter.reduce": [
                     {
-                        "module": "./tests/demo/Array.filter.reduce.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.reduce.js",
                         "code": "arr.filter(func2).reduce((acc, x) => acc + x, 0)",
                         "line": 31,
                         "collumn": 10,
@@ -4120,7 +4136,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.filter.reduce.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.reduce.js",
                         "code": "arr.filter(func).reduce((acc, x, i, a) => acc + x + i + a[i], 0)",
                         "line": 34,
                         "collumn": 11,
@@ -4130,7 +4146,7 @@
                 ],
                 "Array.map unfold": [
                     {
-                        "module": "./tests/demo/Array.map unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map unfold.js",
                         "code": "[1, 2, 3].map(func2)",
                         "line": 32,
                         "collumn": 0,
@@ -4138,7 +4154,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map unfold.js",
                         "code": "f11 = (x, i, a) => x + i + a[i]",
                         "line": 43,
                         "collumn": 6,
@@ -4146,7 +4162,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js",
                         "code": "[1, 2, 3].map((x, i, a) => x + a[i])",
                         "line": 28,
                         "collumn": 0,
@@ -4154,7 +4170,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js",
                         "code": "[1, 2, 3].map((x, i, a) => x + a[i])",
                         "line": 37,
                         "collumn": 17,
@@ -4164,7 +4180,7 @@
                 ],
                 "Array.map": [
                     {
-                        "module": "./tests/demo/Array.map unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map unfold.js",
                         "code": "[1, 2, 3].map(func2)",
                         "line": 32,
                         "collumn": 0,
@@ -4172,7 +4188,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map unfold.js",
                         "code": "f11 = (x, i, a) => x + i + a[i]",
                         "line": 43,
                         "collumn": 6,
@@ -4180,7 +4196,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.filter.join.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.join.js",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
                         "line": 10,
                         "collumn": 6,
@@ -4188,7 +4204,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.filter.join.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.join.js",
                         "code": "arr\n    .map(func2)",
                         "line": 41,
                         "collumn": 10,
@@ -4196,7 +4212,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.filter.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
                         "line": 10,
                         "collumn": 6,
@@ -4204,7 +4220,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.filter.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js",
                         "code": "arr.map(func2)",
                         "line": 39,
                         "collumn": 10,
@@ -4212,7 +4228,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js",
                         "code": "[1, 2, 3].map((x, i, a) => x + a[i])",
                         "line": 28,
                         "collumn": 0,
@@ -4220,7 +4236,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js",
                         "code": "[1, 2, 3].map((x, i, a) => x + a[i])",
                         "line": 37,
                         "collumn": 17,
@@ -4228,7 +4244,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
                         "line": 7,
                         "collumn": 6,
@@ -4236,7 +4252,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js",
                         "code": "arr.map(func2)",
                         "line": 30,
                         "collumn": 10,
@@ -4244,7 +4260,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.js",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
                         "line": 7,
                         "collumn": 6,
@@ -4252,7 +4268,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.js",
                         "code": "arr.map(func2)",
                         "line": 27,
                         "collumn": 10,
@@ -4260,7 +4276,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.reduce.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.reduce.js",
                         "code": "arr.map(func2)",
                         "line": 30,
                         "collumn": 10,
@@ -4270,7 +4286,7 @@
                 ],
                 "Array.map.filter.join": [
                     {
-                        "module": "./tests/demo/Array.map.filter.join.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.join.js",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
                         "line": 10,
                         "collumn": 6,
@@ -4278,7 +4294,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.filter.join.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.join.js",
                         "code": "arr\n    .map(func2)\n    .filter((x) => x > 0.5)\n    .join()",
                         "line": 41,
                         "collumn": 10,
@@ -4288,7 +4304,7 @@
                 ],
                 "Array.map.filter": [
                     {
-                        "module": "./tests/demo/Array.map.filter.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
                         "line": 10,
                         "collumn": 6,
@@ -4296,7 +4312,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.filter.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js",
                         "code": "arr.map(func2).filter((x) => x > 0.5)",
                         "line": 39,
                         "collumn": 10,
@@ -4306,7 +4322,7 @@
                 ],
                 "Array.map.join unfold": [
                     {
-                        "module": "./tests/demo/Array.map.join unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js",
                         "code": "[1, 2, 3].map((x, i, a) => x + a[i]).join()",
                         "line": 28,
                         "collumn": 0,
@@ -4314,7 +4330,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js",
                         "code": "[1, 2, 3].map((x, i, a) => x + a[i]).join('-')",
                         "line": 37,
                         "collumn": 17,
@@ -4324,7 +4340,7 @@
                 ],
                 "Array.slice.map.join": [
                     {
-                        "module": "./tests/demo/Array.map.join unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js",
                         "code": "[1, 2, 3].map((x, i, a) => x + a[i]).join()",
                         "line": 28,
                         "collumn": 0,
@@ -4332,7 +4348,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join unfold.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js",
                         "code": "[1, 2, 3].map((x, i, a) => x + a[i]).join('-')",
                         "line": 37,
                         "collumn": 17,
@@ -4340,7 +4356,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
                         "line": 7,
                         "collumn": 6,
@@ -4348,7 +4364,7 @@
                         "action": "the statement will not be transformed"
                     },
                     {
-                        "module": "./tests/demo/Array.map.join.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js",
                         "code": "arr.map(func2).join()",
                         "line": 30,
                         "collumn": 10,
@@ -4358,7 +4374,7 @@
                 ],
                 "Array.map.reduce": [
                     {
-                        "module": "./tests/demo/Array.map.reduce.js",
+                        "module": "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.reduce.js",
                         "code": "arr.map(func2).reduce((acc, x) => acc + x, 0)",
                         "line": 30,
                         "collumn": 10,
@@ -4368,7 +4384,7 @@
                 ]
             },
             "byModules": {
-                "./tests/demo/Array.filter.reduce.js": [
+                "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.filter.reduce.js": [
                     {
                         "transformation": "Array.filter.reduce",
                         "code": "arr.filter(func2).reduce((acc, x) => acc + x, 0)",
@@ -4386,7 +4402,7 @@
                         "action": "the statement will not be transformed"
                     }
                 ],
-                "./tests/demo/Array.map unfold.js": [
+                "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map unfold.js": [
                     {
                         "transformation": "Array.map unfold",
                         "code": "[1, 2, 3].map(func2)",
@@ -4420,7 +4436,7 @@
                         "action": "the statement will not be transformed"
                     }
                 ],
-                "./tests/demo/Array.map.filter.join.js": [
+                "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.join.js": [
                     {
                         "transformation": "Array.map.filter.join",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
@@ -4454,7 +4470,7 @@
                         "action": "the statement will not be transformed"
                     }
                 ],
-                "./tests/demo/Array.map.filter.js": [
+                "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.filter.js": [
                     {
                         "transformation": "Array.map.filter",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
@@ -4488,7 +4504,7 @@
                         "action": "the statement will not be transformed"
                     }
                 ],
-                "./tests/demo/Array.map.join unfold.js": [
+                "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join unfold.js": [
                     {
                         "transformation": "Array.map.join unfold",
                         "code": "[1, 2, 3].map((x, i, a) => x + a[i]).join()",
@@ -4554,7 +4570,7 @@
                         "action": "the statement will not be transformed"
                     }
                 ],
-                "./tests/demo/Array.map.join.js": [
+                "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.join.js": [
                     {
                         "transformation": "Array.slice.map.join",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
@@ -4588,7 +4604,7 @@
                         "action": "the statement will not be transformed"
                     }
                 ],
-                "./tests/demo/Array.map.js": [
+                "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.js": [
                     {
                         "transformation": "Array.map",
                         "code": "func1 = (x, i, a) => x + i - a[0]",
@@ -4606,7 +4622,7 @@
                         "action": "the statement will not be transformed"
                     }
                 ],
-                "./tests/demo/Array.map.reduce.js": [
+                "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Array.map.reduce.js": [
                     {
                         "transformation": "Array.map.reduce",
                         "code": "arr.map(func2).reduce((acc, x) => acc + x, 0)",
