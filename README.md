@@ -202,7 +202,7 @@ and after building the project, stop the statistics collection server in one of 
 -   in the console, press Ctrl+C
 -   by executing the command in the console `curl -X POST http://127.0.0.1:3000/stop`
 
-after stopping the statistics collection server, the results will be written to the file `./babel-plugin-perf.stats.json` (by default, the file name and path can be set when starting the statistics collection server in the parameter `--stats-filename`, you can also configure the host `--host` and the port `--port` on which the statistics collection server will be launched).
+after stopping the statistics collection server, the results will be written to the file `./babel-plugin-perf.stats.json` (the file name and path can be set when starting the statistics collection server in the parameter `--stats-filename`, you can also configure the host `--host` and the port `--port` on which the statistics collection server will be launched).
 
 <a href="./babel-plugin-perf.stats.json" target="_blank" rel="noopener noreferrer">Example</a> of collected statistics during code transformation in the folder `./tests/demo'.
 
