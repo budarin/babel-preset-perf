@@ -473,9 +473,15 @@ The idea of this transformation, as well as many other useful tips, was offered 
 
 ## Troubleshooting
 
-A tragedy may happen - one of the packages in your dependencies produces arrays with holes/sparse arrays (hopefully not your code!?) - in this case, the trasformations may not produce the result that is expected (it all depends on the array's methods - they turn out to handle holes differently!
+A tragedy may happen - one of the packages in your dependencies produces arrays with holes (I hope not your code!?) - in this case, the trasformations may not produce the result that is expected (it all depends on the array methods - they turn out to process holes differently)!
 
-The question arises in detecting this negligent developer, his package and excluding him and his package from preset processing.
+The Troubleshooting technique is as follows:
+
+-   collect a list of used modules from npm
+-   filtering this list using `include` to find those that give the wrong result
+-   then filtering the list of transformations - find which transformations for each of these modules lead to failures
+-   study the module code to understand what the problem is
+
 First you need to modify the rule for webpack so that you can get a list of modules imported from node_modules
 
 ```js
@@ -514,7 +520,7 @@ if (process.env.NODE_ENV === 'production') {
 return webpackConfig;
 ```
 
-To begin with, we can make a list of packages used by our application by selecting only package names from the full path of modules, and then using the `half division rule`, you can consistently refine the list of allowed packages
+Using the `half division rule`, you can consistently refine the list of allowed packages to find those modules that lead to defects
 
 ```js
 const allowedPackages = [.....]
@@ -547,13 +553,14 @@ const allowedPackages = [.....]
 }
 ```
 
-find the problematic ones and after going through all the modules of the problematic packages, find the really defective ones and add them to the list `exclude` for the loader
+Then using the `half division rule` for transformations, find for each "defective module" those transformations due to which it gives incorrect results
 
 ```js
 {
     test: /\.(cjs|mjs|js)$/,
-    include: /node_modules/,
-    exclude: [pathToDefectedModule1, pathToDefectedModule2, .....],
+    include: (filePath) => {
+        return /node_modules/.test(filePath) && filePath === theModule;
+    },
     use: {
         loader: 'babel-loader',
         options: {
@@ -563,7 +570,8 @@ find the problematic ones and after going through all the modules of the problem
                 [
                     'babel-preset-perf',
                     {
-                        target: 'node',
+                        target: 'custom',
+                        transformationsList: [...],
                         unsafeTransformations: true
                     }
                 ]
