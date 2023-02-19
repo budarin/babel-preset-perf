@@ -11,13 +11,13 @@ import arrayChainsOfCyclicMethodsPlugin from './babel-plugin-perf-transform-arra
 import transformConstAndLetWithVarPlugin from './babel-plugin-perf-transform-variable-declarations-with-var';
 
 export {
-    varTransformations,
-    transformationsList,
+    fullTransformationsList,
     arrayTransformations,
-    objectTransformations,
-    stringTransformations,
     arrayExpressionTransformations,
     arrayChainsMethodsTransformations,
+    objectTransformations,
+    stringTransformations,
+    varTransformations,
 } from './utils/consts';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment

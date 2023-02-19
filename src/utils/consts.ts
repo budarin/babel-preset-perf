@@ -148,7 +148,7 @@ export const nodeTargetSafeTransformationsList = [
     ...varTransformations,
 ];
 
-export const transformationsList = {
+export const fullTransformationsList = {
     // array
     ARRAY_DESTRUCTURING_INTO_VARS,
     ARRAY_MAP_JOIN_UNFOLD,
