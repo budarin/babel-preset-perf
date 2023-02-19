@@ -1,5 +1,5 @@
 {
-    "unamed_config_9b60d734-0539-4583-9206-1eec64815b77": {
+    "unamed_config_330c0197-ffe9-4b54-a8cd-8bb7cd10f6c7": {
         "summary": {
             "transformations": {
                 "total": 331,
@@ -169,22 +169,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterForEachHelper: _affeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelper\");",
+                                    "code": "generated: var {\n  arrayFilterForEachHelper: _affeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterForEachHelperWithForEachThis: _affehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithForEachThis\");",
+                                    "code": "generated: var {\n  arrayFilterForEachHelperWithForEachThis: _affehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterForEachHelperWithFilterAndForEachThis: _affehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterAndForEachThis\");",
+                                    "code": "generated: var {\n  arrayFilterForEachHelperWithFilterAndForEachThis: _affehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterAndForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterForEachHelperWithFilterThis: _affehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterThis\");",
+                                    "code": "generated: var {\n  arrayFilterForEachHelperWithFilterThis: _affehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -216,12 +216,12 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
+                                    "code": "generated: var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterJoinHelperWithFilterThis: _afjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelperWithFilterThis\");",
+                                    "code": "generated: var {\n  arrayFilterJoinHelperWithFilterThis: _afjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -233,7 +233,7 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
+                                    "code": "generated: var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -245,7 +245,7 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
+                                    "code": "generated: var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -262,22 +262,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterMapJoinHelper: _afmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelper\");",
+                                    "code": "generated: var {\n  arrayFilterMapJoinHelper: _afmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterMapJoinHelperWithFilterThis: _afmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterThis\");",
+                                    "code": "generated: var {\n  arrayFilterMapJoinHelperWithFilterThis: _afmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterMapJoinHelperWithMapThis: _afmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithMapThis\");",
+                                    "code": "generated: var {\n  arrayFilterMapJoinHelperWithMapThis: _afmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterMapJoinHelperWithFilterAndMapThis: _afmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterAndMapThis\");",
+                                    "code": "generated: var {\n  arrayFilterMapJoinHelperWithFilterAndMapThis: _afmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterAndMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -294,22 +294,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
+                                    "code": "generated: var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterMapHelperWithFilterThis: _afmtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterThis\");",
+                                    "code": "generated: var {\n  arrayFilterMapHelperWithFilterThis: _afmtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterMapHelperWithMapThis: _afmtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithMapThis\");",
+                                    "code": "generated: var {\n  arrayFilterMapHelperWithMapThis: _afmtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterMapHelperWithFilterAndMapThis: _afmtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterAndMapThis\");",
+                                    "code": "generated: var {\n  arrayFilterMapHelperWithFilterAndMapThis: _afmtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterAndMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -361,22 +361,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
+                                    "code": "generated: var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterReduceHelper: _afrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelper\");",
+                                    "code": "generated: var {\n  arrayFilterReduceHelper: _afrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
+                                    "code": "generated: var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterReduceHelperWithFilterThis: _afrhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelperWithFilterThis\");",
+                                    "code": "generated: var {\n  arrayFilterReduceHelperWithFilterThis: _afrhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -425,7 +425,7 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
+                                    "code": "generated: var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -437,7 +437,7 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp2 = s => s(root);",
+                                    "code": "generated: var _mp2 = s => s(root);",
                                     "line": 0,
                                     "collumn": 0
                                 },
@@ -467,22 +467,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp = x => x + 'Array';",
+                                    "code": "generated: var _mp = x => x + 'Array';",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp3 = x => x + i;",
+                                    "code": "generated: var _mp3 = x => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp4 = (x, i) => x + i;",
+                                    "code": "generated: var _mp4 = (x, i) => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp5 = function (x, i) {\n  return x + i;\n};",
+                                    "code": "generated: var _mp5 = function (x, i) {\n  return x + i;\n};",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -529,22 +529,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
+                                    "code": "generated: var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapFilterJoinHelperWithFilterThis: _amfjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithFilterThis\");",
+                                    "code": "generated: var {\n  arrayMapFilterJoinHelperWithFilterThis: _amfjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapFilterJoinHelperWithMapThis: _amfjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapThis\");",
+                                    "code": "generated: var {\n  arrayMapFilterJoinHelperWithMapThis: _amfjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapFilterJoinHelperWithMapAndFilterThis: _amfjhwmft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapAndFilterThis\");",
+                                    "code": "generated: var {\n  arrayMapFilterJoinHelperWithMapAndFilterThis: _amfjhwmft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapAndFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -591,22 +591,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapFilterHelperWithFilterThis: _amfhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithFilterThis\");",
+                                    "code": "generated: var {\n  arrayMapFilterHelperWithFilterThis: _amfhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
+                                    "code": "generated: var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
+                                    "code": "generated: var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapFilterHelperWithMapAndFilterThis: _amfhwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithMapAndFilterThis\");",
+                                    "code": "generated: var {\n  arrayMapFilterHelperWithMapAndFilterThis: _amfhwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithMapAndFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -653,22 +653,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapForEachHelper: _amfeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelper\");",
+                                    "code": "generated: var {\n  arrayMapForEachHelper: _amfeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapForEachHelperWithForEachThis: _amfehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithForEachThis\");",
+                                    "code": "generated: var {\n  arrayMapForEachHelperWithForEachThis: _amfehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapForEachHelperWithMapAndForEachThis: _amfehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapAndForEachThis\");",
+                                    "code": "generated: var {\n  arrayMapForEachHelperWithMapAndForEachThis: _amfehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapAndForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapForEachHelperWithMapThis: _amfehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapThis\");",
+                                    "code": "generated: var {\n  arrayMapForEachHelperWithMapThis: _amfehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -690,7 +690,7 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp5 = (x, i, a) => x + i;",
+                                    "code": "generated: var _mp5 = (x, i, a) => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
@@ -705,27 +705,27 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp = x => x;",
+                                    "code": "generated: var _mp = x => x;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp2 = (x, i) => x + i;",
+                                    "code": "generated: var _mp2 = (x, i) => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp3 = function (x, i) {\n  return x + i;\n};",
+                                    "code": "generated: var _mp3 = function (x, i) {\n  return x + i;\n};",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var _mp4 = (x, i, a) => x + i;",
+                                    "code": "generated: var _mp4 = (x, i, a) => x + i;",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
+                                    "code": "generated: var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -767,22 +767,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
+                                    "code": "generated: var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapJoinHelper: _amjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelper\");",
+                                    "code": "generated: var {\n  arrayMapJoinHelper: _amjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
+                                    "code": "generated: var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapJoinHelperWithMapThis: _amjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelperWithMapThis\");",
+                                    "code": "generated: var {\n  arrayMapJoinHelperWithMapThis: _amjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -824,12 +824,12 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
+                                    "code": "generated: var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
+                                    "code": "generated: var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -871,17 +871,17 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
+                                    "code": "generated: var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
+                                    "code": "generated: var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arrayMapReduceHelperWithMapThis: _amrhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelperWithMapThis\");",
+                                    "code": "generated: var {\n  arrayMapReduceHelperWithMapThis: _amrhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -898,12 +898,12 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arraySliceEveryHelper: _aseh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelper\");",
+                                    "code": "generated: var {\n  arraySliceEveryHelper: _aseh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arraySliceEveryHelperWithEveryThis: _asehwet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelperWithEveryThis\");",
+                                    "code": "generated: var {\n  arraySliceEveryHelperWithEveryThis: _asehwet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelperWithEveryThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -930,12 +930,12 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arraySliceMapJoinHelper: _asmjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelper\");",
+                                    "code": "generated: var {\n  arraySliceMapJoinHelper: _asmjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  arraySliceMapJoinHelperWithMapThis: _asmjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelperWithMapThis\");",
+                                    "code": "generated: var {\n  arraySliceMapJoinHelperWithMapThis: _asmjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -959,22 +959,22 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  objectEntriesFilterMapJoinHelper: _oefmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelper\");",
+                                    "code": "generated: var {\n  objectEntriesFilterMapJoinHelper: _oefmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithFilterThis: _oefmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterThis\");",
+                                    "code": "generated: var {\n  objectEntriesFilterMapJoinHelperWithFilterThis: _oefmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithMapThis: _oefmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithMapThis\");",
+                                    "code": "generated: var {\n  objectEntriesFilterMapJoinHelperWithMapThis: _oefmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithFilterAndMapThis: _oefmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterAndMapThis\");",
+                                    "code": "generated: var {\n  objectEntriesFilterMapJoinHelperWithFilterAndMapThis: _oefmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterAndMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -986,12 +986,12 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  objectEntriesForEachHelper: _oefeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelper\");",
+                                    "code": "generated: var {\n  objectEntriesForEachHelper: _oefeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  objectEntriesForEachHelperWithForEachThis: _oefehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelperWithForEachThis\");",
+                                    "code": "generated: var {\n  objectEntriesForEachHelperWithForEachThis: _oefehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelperWithForEachThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -1003,19 +1003,19 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  objectEntriesMapHelper: _oemh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelper\");",
+                                    "code": "generated: var {\n  objectEntriesMapHelper: _oemh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  objectEntriesMapHelperWithMapThis: _oemhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelperWithMapThis\");",
+                                    "code": "generated: var {\n  objectEntriesMapHelperWithMapThis: _oemhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelperWithMapThis\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
                             "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/Object.entries.reduce.js": [
                                 {
-                                    "code": "generated: => var {\n  objectEntriesReduceHelper: _oerh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesReduceHelper\");",
+                                    "code": "generated: var {\n  objectEntriesReduceHelper: _oerh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesReduceHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -1037,14 +1037,14 @@
                                     "collumn": 0
                                 },
                                 {
-                                    "code": "generated: => var {\n  objectValuesFirstItemHelper: _ovfih\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectValuesFirstItemHelper\");",
+                                    "code": "generated: var {\n  objectValuesFirstItemHelper: _ovfih\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectValuesFirstItemHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
                             ],
                             "/Users/vadim_budarin/projects/babel-preset-perf/tests/demo/String.slice.js": [
                                 {
-                                    "code": "generated: => var {\n  stringSliceHelper: _ssh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/stringSliceHelper\");",
+                                    "code": "generated: var {\n  stringSliceHelper: _ssh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/stringSliceHelper\");",
                                     "line": 0,
                                     "collumn": 0
                                 }
@@ -2208,25 +2208,25 @@
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterForEachHelper: _affeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelper\");",
+                                "code": "generated: var {\n  arrayFilterForEachHelper: _affeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterForEachHelperWithForEachThis: _affehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithForEachThis\");",
+                                "code": "generated: var {\n  arrayFilterForEachHelperWithForEachThis: _affehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterForEachHelperWithFilterAndForEachThis: _affehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterAndForEachThis\");",
+                                "code": "generated: var {\n  arrayFilterForEachHelperWithFilterAndForEachThis: _affehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterAndForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterForEachHelperWithFilterThis: _affehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterThis\");",
+                                "code": "generated: var {\n  arrayFilterForEachHelperWithFilterThis: _affehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterForEachHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2285,13 +2285,13 @@
                                 "transformation": "Array.filter.join"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
+                                "code": "generated: var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterJoinHelperWithFilterThis: _afjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelperWithFilterThis\");",
+                                "code": "generated: var {\n  arrayFilterJoinHelperWithFilterThis: _afjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2422,7 +2422,7 @@
                                 "transformation": "Array.filter.length as boolean"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
+                                "code": "generated: var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2445,7 +2445,7 @@
                                 "transformation": "Array.filter.length"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
+                                "code": "generated: var {\n  arrayFilterLengthHelper: _aflh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterLengthHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2492,25 +2492,25 @@
                                 "transformation": "Array.filter.map.join"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterMapJoinHelper: _afmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelper\");",
+                                "code": "generated: var {\n  arrayFilterMapJoinHelper: _afmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterMapJoinHelperWithFilterThis: _afmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterThis\");",
+                                "code": "generated: var {\n  arrayFilterMapJoinHelperWithFilterThis: _afmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterMapJoinHelperWithMapThis: _afmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithMapThis\");",
+                                "code": "generated: var {\n  arrayFilterMapJoinHelperWithMapThis: _afmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterMapJoinHelperWithFilterAndMapThis: _afmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterAndMapThis\");",
+                                "code": "generated: var {\n  arrayFilterMapJoinHelperWithFilterAndMapThis: _afmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapJoinHelperWithFilterAndMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2557,25 +2557,25 @@
                                 "transformation": "Array.filter.map"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
+                                "code": "generated: var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterMapHelperWithFilterThis: _afmtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterThis\");",
+                                "code": "generated: var {\n  arrayFilterMapHelperWithFilterThis: _afmtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterMapHelperWithMapThis: _afmtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithMapThis\");",
+                                "code": "generated: var {\n  arrayFilterMapHelperWithMapThis: _afmtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterMapHelperWithFilterAndMapThis: _afmtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterAndMapThis\");",
+                                "code": "generated: var {\n  arrayFilterMapHelperWithFilterAndMapThis: _afmtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelperWithFilterAndMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2670,25 +2670,25 @@
                                 "transformation": "Array.filter.reduce"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
+                                "code": "generated: var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterReduceHelper: _afrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelper\");",
+                                "code": "generated: var {\n  arrayFilterReduceHelper: _afrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
+                                "code": "generated: var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterReduceHelperWithFilterThis: _afrhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelperWithFilterThis\");",
+                                "code": "generated: var {\n  arrayFilterReduceHelperWithFilterThis: _afrhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterReduceHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2800,7 +2800,7 @@
                                 "transformation": "Array.join"
                             },
                             {
-                                "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
+                                "code": "generated: var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2829,7 +2829,7 @@
                                 "transformation": "Array.map unfold"
                             },
                             {
-                                "code": "generated: => var _mp2 = s => s(root);",
+                                "code": "generated: var _mp2 = s => s(root);",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -2919,25 +2919,25 @@
                                 "transformation": "Array.map unfold"
                             },
                             {
-                                "code": "generated: => var _mp = x => x + 'Array';",
+                                "code": "generated: var _mp = x => x + 'Array';",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var _mp3 = x => x + i;",
+                                "code": "generated: var _mp3 = x => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var _mp4 = (x, i) => x + i;",
+                                "code": "generated: var _mp4 = (x, i) => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var _mp5 = function (x, i) {\n  return x + i;\n};",
+                                "code": "generated: var _mp5 = function (x, i) {\n  return x + i;\n};",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3026,25 +3026,25 @@
                                 "transformation": "Array.map.filter.join"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
+                                "code": "generated: var {\n  arrayFilterJoinHelper: _afjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapFilterJoinHelperWithFilterThis: _amfjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithFilterThis\");",
+                                "code": "generated: var {\n  arrayMapFilterJoinHelperWithFilterThis: _amfjhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapFilterJoinHelperWithMapThis: _amfjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapThis\");",
+                                "code": "generated: var {\n  arrayMapFilterJoinHelperWithMapThis: _amfjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapFilterJoinHelperWithMapAndFilterThis: _amfjhwmft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapAndFilterThis\");",
+                                "code": "generated: var {\n  arrayMapFilterJoinHelperWithMapAndFilterThis: _amfjhwmft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterJoinHelperWithMapAndFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3127,25 +3127,25 @@
                                 "transformation": "Array.map.filter"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapFilterHelperWithFilterThis: _amfhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithFilterThis\");",
+                                "code": "generated: var {\n  arrayMapFilterHelperWithFilterThis: _amfhwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
+                                "code": "generated: var {\n  arrayFilterMapHelper: _afmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayFilterMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
+                                "code": "generated: var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapFilterHelperWithMapAndFilterThis: _amfhwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithMapAndFilterThis\");",
+                                "code": "generated: var {\n  arrayMapFilterHelperWithMapAndFilterThis: _amfhwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapFilterHelperWithMapAndFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3228,25 +3228,25 @@
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapForEachHelper: _amfeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelper\");",
+                                "code": "generated: var {\n  arrayMapForEachHelper: _amfeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapForEachHelperWithForEachThis: _amfehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithForEachThis\");",
+                                "code": "generated: var {\n  arrayMapForEachHelperWithForEachThis: _amfehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapForEachHelperWithMapAndForEachThis: _amfehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapAndForEachThis\");",
+                                "code": "generated: var {\n  arrayMapForEachHelperWithMapAndForEachThis: _amfehwmfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapAndForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapForEachHelperWithMapThis: _amfehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapThis\");",
+                                "code": "generated: var {\n  arrayMapForEachHelperWithMapThis: _amfehwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapForEachHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3335,7 +3335,7 @@
                                 "transformation": "Array.map.join unfold"
                             },
                             {
-                                "code": "generated: => var _mp5 = (x, i, a) => x + i;",
+                                "code": "generated: var _mp5 = (x, i, a) => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3359,31 +3359,31 @@
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var _mp = x => x;",
+                                "code": "generated: var _mp = x => x;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var _mp2 = (x, i) => x + i;",
+                                "code": "generated: var _mp2 = (x, i) => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var _mp3 = function (x, i) {\n  return x + i;\n};",
+                                "code": "generated: var _mp3 = function (x, i) {\n  return x + i;\n};",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var _mp4 = (x, i, a) => x + i;",
+                                "code": "generated: var _mp4 = (x, i, a) => x + i;",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
+                                "code": "generated: var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3472,25 +3472,25 @@
                                 "transformation": "Array.map.join"
                             },
                             {
-                                "code": "generated: => var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
+                                "code": "generated: var {\n  arrayJoinHelper: _ajh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapJoinHelper: _amjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelper\");",
+                                "code": "generated: var {\n  arrayMapJoinHelper: _amjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
+                                "code": "generated: var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapJoinHelperWithMapThis: _amjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelperWithMapThis\");",
+                                "code": "generated: var {\n  arrayMapJoinHelperWithMapThis: _amjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3567,13 +3567,13 @@
                                 "transformation": "Array.map"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
+                                "code": "generated: var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
+                                "code": "generated: var {\n  arrayMapHelperWithMapThis: _amhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3656,19 +3656,19 @@
                                 "transformation": "Array.map.reduce"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
+                                "code": "generated: var {\n  arrayMapReduceHelper: _amrh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
+                                "code": "generated: var {\n  arrayMapHelper: _amh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arrayMapReduceHelperWithMapThis: _amrhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelperWithMapThis\");",
+                                "code": "generated: var {\n  arrayMapReduceHelperWithMapThis: _amrhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arrayMapReduceHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3733,13 +3733,13 @@
                                 "transformation": "Array.slice.every"
                             },
                             {
-                                "code": "generated: => var {\n  arraySliceEveryHelper: _aseh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelper\");",
+                                "code": "generated: var {\n  arraySliceEveryHelper: _aseh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arraySliceEveryHelperWithEveryThis: _asehwet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelperWithEveryThis\");",
+                                "code": "generated: var {\n  arraySliceEveryHelperWithEveryThis: _asehwet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceEveryHelperWithEveryThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3816,13 +3816,13 @@
                                 "transformation": "Array.slice.map.join"
                             },
                             {
-                                "code": "generated: => var {\n  arraySliceMapJoinHelper: _asmjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelper\");",
+                                "code": "generated: var {\n  arraySliceMapJoinHelper: _asmjh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  arraySliceMapJoinHelperWithMapThis: _asmjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelperWithMapThis\");",
+                                "code": "generated: var {\n  arraySliceMapJoinHelperWithMapThis: _asmjhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/arraySliceMapJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3886,25 +3886,25 @@
                                 "transformation": "Object.entries.filter.map.join"
                             },
                             {
-                                "code": "generated: => var {\n  objectEntriesFilterMapJoinHelper: _oefmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelper\");",
+                                "code": "generated: var {\n  objectEntriesFilterMapJoinHelper: _oefmjt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithFilterThis: _oefmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterThis\");",
+                                "code": "generated: var {\n  objectEntriesFilterMapJoinHelperWithFilterThis: _oefmjtwft\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithMapThis: _oefmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithMapThis\");",
+                                "code": "generated: var {\n  objectEntriesFilterMapJoinHelperWithMapThis: _oefmjtwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  objectEntriesFilterMapJoinHelperWithFilterAndMapThis: _oefmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterAndMapThis\");",
+                                "code": "generated: var {\n  objectEntriesFilterMapJoinHelperWithFilterAndMapThis: _oefmjtwfmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesFilterMapJoinHelperWithFilterAndMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3933,13 +3933,13 @@
                                 "transformation": "Object.entries.forEach"
                             },
                             {
-                                "code": "generated: => var {\n  objectEntriesForEachHelper: _oefeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelper\");",
+                                "code": "generated: var {\n  objectEntriesForEachHelper: _oefeh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  objectEntriesForEachHelperWithForEachThis: _oefehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelperWithForEachThis\");",
+                                "code": "generated: var {\n  objectEntriesForEachHelperWithForEachThis: _oefehwfet\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesForEachHelperWithForEachThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3968,13 +3968,13 @@
                                 "transformation": "Object.entries.map"
                             },
                             {
-                                "code": "generated: => var {\n  objectEntriesMapHelper: _oemh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelper\");",
+                                "code": "generated: var {\n  objectEntriesMapHelper: _oemh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  objectEntriesMapHelperWithMapThis: _oemhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelperWithMapThis\");",
+                                "code": "generated: var {\n  objectEntriesMapHelperWithMapThis: _oemhwmt\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesMapHelperWithMapThis\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -3997,7 +3997,7 @@
                                 "transformation": "Object.entries.reduce"
                             },
                             {
-                                "code": "generated: => var {\n  objectEntriesReduceHelper: _oerh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesReduceHelper\");",
+                                "code": "generated: var {\n  objectEntriesReduceHelper: _oerh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectEntriesReduceHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -4038,7 +4038,7 @@
                                 "transformation": "Variable transform const and let with var"
                             },
                             {
-                                "code": "generated: => var {\n  objectValuesFirstItemHelper: _ovfih\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectValuesFirstItemHelper\");",
+                                "code": "generated: var {\n  objectValuesFirstItemHelper: _ovfih\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/objectValuesFirstItemHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
@@ -4079,7 +4079,7 @@
                                 "transformation": "String.slice"
                             },
                             {
-                                "code": "generated: => var {\n  stringSliceHelper: _ssh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/stringSliceHelper\");",
+                                "code": "generated: var {\n  stringSliceHelper: _ssh\n} = require(\"/Users/vadim_budarin/projects/babel-preset-perf/dist/helpers/stringSliceHelper\");",
                                 "line": 0,
                                 "collumn": 0,
                                 "transformation": "Variable transform const and let with var"
