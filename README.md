@@ -132,7 +132,7 @@ Example of using options to configure a preset
 
 ### `name`: string, by default: `unamed_config`
 
-Sets the name of a specific preset configuration. The name is used when collecting statistics of code transformations - see the description of the parameter [unsafeTransformations](#unsafeTransformations). Specifying the name is important when collecting statistics on transformations.
+Sets the name of a specific preset configuration. The name is used when collecting statistics of code transformations - see the description of the parameter [useStatsServer](#useStatsServer). Specifying the name is important when collecting statistics on transformations.
 
 ### `target`: 'node' | 'custom', by default: 'node'
 
@@ -183,7 +183,7 @@ While the preset is running, you can collect the statistics on the transformatio
 To do this, you need to configure the parameters of the transformation statistics collection server by specifying the address or host name on which the statistics collection server is running and its port, for example:
 
 ```js
-{
+useStatsServer: {
     host: '127.0.0.1',
     port: 3000
 }
