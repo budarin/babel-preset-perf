@@ -558,6 +558,17 @@ const allowedPackages = [.....]
 Далее используя [правило половинного деления](https://mybiblioteka.su/9-108554.html) для трансформаций, найти для каждого "дефектного модуля", те трансформации из-за которых он выдает не корректные результаты
 
 ```js
+const { fullTransformationsList } = require('babel-preset-perf');
+
+const {
+    ARRAY_DESTRUCTURING_INTO_VARS,
+    ARRAY_FILTER_FOREACH,
+    ARRAY_FILTER_JOIN,
+    ...
+} = fullTransformationsList;
+
+...
+
 {
     test: /\.(cjs|mjs|js)$/,
     include: /node_modules/,
@@ -573,9 +584,9 @@ const allowedPackages = [.....]
                     {
                         target: 'custom',
                         transformationsList: [
-                            'Array destructuring',
-                            'Array.join unfold',
-                            'Array.map unfold',
+                            ARRAY_DESTRUCTURING_INTO_VARS,
+                            ARRAY_FILTER_FOREACH,
+                            ARRAY_FILTER_JOIN,
                             ...
                         ],
                         unsafeTransformations: true

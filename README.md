@@ -556,11 +556,21 @@ const allowedPackages = [.....]
 Then using the `half division rule` for transformations, find for each "defective module" those transformations due to which it gives incorrect results
 
 ```js
+const { fullTransformationsList } = require('babel-preset-perf');
+
+const {
+    ARRAY_DESTRUCTURING_INTO_VARS,
+    ARRAY_FILTER_FOREACH,
+    ARRAY_FILTER_JOIN,
+    ...
+} = fullTransformationsList;
+
+...
+
 {
     test: /\.(cjs|mjs|js)$/,
-    include: (filePath) => {
-        return /node_modules/.test(filePath) && filePath === theModule;
-    },
+    include: /node_modules/,
+    exclude: [pathToDefectedModule1, pathToDefectedModule2, .....],
     use: {
         loader: 'babel-loader',
         options: {
@@ -572,9 +582,9 @@ Then using the `half division rule` for transformations, find for each "defectiv
                     {
                         target: 'custom',
                         transformationsList: [
-                            'Array destructuring',
-                            'Array.join unfold',
-                            'Array.map unfold',
+                            ARRAY_DESTRUCTURING_INTO_VARS,
+                            ARRAY_FILTER_FOREACH,
+                            ARRAY_FILTER_JOIN,
                             ...
                         ],
                         unsafeTransformations: true
