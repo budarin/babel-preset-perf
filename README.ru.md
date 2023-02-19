@@ -570,7 +570,12 @@ const allowedPackages = [.....]
                     'babel-preset-perf',
                     {
                         target: 'custom',
-                        transformationsList: [...],
+                        transformationsList: [
+                            'Array destructuring',
+                            'Array.join unfold',
+                            'Array.map unfold',
+                            ...
+                        ],
                         unsafeTransformations: true
                     }
                 ]
