@@ -130,11 +130,11 @@ Example of using options to configure a preset
 }
 ```
 
-### `name`: string, by default: `unamed_config`
+### name: string, by default: `unamed_config`
 
-Sets the name of a specific preset configuration. The name is used when collecting statistics of code transformations - see the description of the parameter [useStatsServer](#useStatsServer). Specifying the name is important when collecting statistics on transformations.
+Sets the name of a specific preset configuration. The name is used when collecting statistics of code transformations - see the description of the parameter [useStatsServer](#usestatsserver-boolean--object-by-default-false). Specifying the name is important when collecting statistics on transformations.
 
-### `target`: 'node' | 'custom', by default: 'node'
+### target: 'node' | 'custom', by default: 'node'
 
 At the moment (due to the lack of an opportunity for me to test browsers on the Android and iOS platforms), the preset is recommended to be used only for NodeJS, since all transformations have been tested and confirmed by the results of performance tests for the target platform - Linux.
 
@@ -142,7 +142,7 @@ At the moment (due to the lack of an opportunity for me to test browsers on the 
 
 If you have the opportunity to test all the most used browsers on Android or iOS platforms - do not hesitate - make a pull-request with the results of tests for browsers. Thus, it will be possible to determine which transformations are applicable for browsers and thus it will be possible to add the `browsers` parameter to the option!
 
-### `transformationsList`: string[], by default: []
+### transformationsList: string[], by default: []
 
 If you specify `custom` as the target, you need to create a list of desired transformations yourself.
 The preset exports several constants for this:
@@ -157,7 +157,7 @@ The preset exports several constants for this:
 
 see the [Transformations](#Transformations) section
 
-### `unsafeTransformations`: boolean, by default: false
+### unsafeTransformations: boolean, by default: false
 
 > Attention!
 
@@ -172,11 +172,11 @@ These performance optimizations are based on the fact that:
 
 If you find that someone is creating an array with holes (sparse arrays), immediately write to him about the problem and tell him that creating sparse arrays is bad practice, and it's not good to do an anti-pattern anyway!
 
-### `verbose`: boolean, by default: false
+### verbose: boolean, by default: false
 
 This parameter is responsible for displaying warnings to the console during transformations.
 
-### `useStatsServer`: boolean | object, by default: false
+### useStatsServer: boolean | object, by default: false
 
 While the preset is running, you can collect the statistics on the transformations performed in the modules.
 
@@ -210,11 +210,11 @@ I recommend downloading the file to your device (or view the raw file in a brows
 
 ## Magical Comments
 
-### `@babel-preset-perf-ignore`
+### @babel-preset-perf-ignore
 
 Written at the top of the module - prevents the transforming of the entire module.
 
-### `@babel-preset-perf-disable-next-line`
+### @babel-preset-perf-disable-next-line
 
 Prevents transpilation of the statement following it.
 
@@ -556,11 +556,21 @@ const allowedPackages = [.....]
 Then using the `half division rule` for transformations, find for each "defective module" those transformations due to which it gives incorrect results
 
 ```js
+const { fullTransformationsList } = require('babel-preset-perf');
+
+const {
+    ARRAY_DESTRUCTURING_INTO_VARS,
+    ARRAY_FILTER_FOREACH,
+    ARRAY_FILTER_JOIN,
+    ...
+} = fullTransformationsList;
+
+...
+
 {
     test: /\.(cjs|mjs|js)$/,
-    include: (filePath) => {
-        return /node_modules/.test(filePath) && filePath === theModule;
-    },
+    include: /node_modules/,
+    exclude: [pathToDefectedModule1, pathToDefectedModule2, .....],
     use: {
         loader: 'babel-loader',
         options: {
@@ -572,9 +582,9 @@ Then using the `half division rule` for transformations, find for each "defectiv
                     {
                         target: 'custom',
                         transformationsList: [
-                            'Array destructuring',
-                            'Array.join unfold',
-                            'Array.map unfold',
+                            ARRAY_DESTRUCTURING_INTO_VARS,
+                            ARRAY_FILTER_FOREACH,
+                            ARRAY_FILTER_JOIN,
                             ...
                         ],
                         unsafeTransformations: true
