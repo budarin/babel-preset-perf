@@ -11,7 +11,7 @@ This allows developers to still write expressive, easy-to-read and easy-to-under
 Analyzing the flamegraph of one of my boilerplates, I noticed that in the hot zone on an empty project there is the code of one of the widely used libraries.
 I turned to the developers with a request to rewrite that code to a more productive one, to which I received an answer: we will not rewrite the code into unreadable and incomprehensible, but more productive to the detriment of the readability and maintainability of our code.
 
-After thinking a little, I agreed with them, and came to the understanding that it was necessary to study Babel and write a set of plugins on it that would fix performance problems in npm dependencies!
+After thinking a little, I agreed with them, and came to the understanding that it was necessary to study Babel and write a set of plugins on it that would increase performance in `npm dependencies`!
 
 After many hours spent studying the topic of microbenchmarking, testing tools, Babel and code optimization methods in js, `babel-preset-perf` was created!
 
