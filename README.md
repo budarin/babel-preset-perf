@@ -132,7 +132,7 @@ Example of using options to configure a preset
 
 ### name: string, by default: `unamed_config`
 
-Sets the name of a specific preset configuration. The name is used when collecting statistics of code transformations - see the description of the parameter [useStatsServer](#useStatsServer). Specifying the name is important when collecting statistics on transformations.
+Sets the name of a specific preset configuration. The name is used when collecting statistics of code transformations - see the description of the parameter [useStatsServer](#usestatsserver-boolean--object-by-default-false). Specifying the name is important when collecting statistics on transformations.
 
 ### target: 'node' | 'custom', by default: 'node'
 
