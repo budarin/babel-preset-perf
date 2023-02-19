@@ -7,11 +7,7 @@ module.exports = {
             {
                 target: 'node',
                 unsafeTransformations: true,
-                // useStatsServer: false,
-                useStatsServer: {
-                    host: '127.0.0.1',
-                    port: 3000,
-                },
+                useStatsServer: false,
             },
         ],
 
