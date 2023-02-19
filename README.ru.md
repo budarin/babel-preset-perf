@@ -101,6 +101,7 @@ return webpackConfig;
 
 -   name
 -   target
+-   transformationsList
 -   unsafeTransformations
 -   verbose
 -   useStatsServer
@@ -141,17 +142,17 @@ return webpackConfig;
 
 Если у вас есть возможность протестировать все наиболее используемые браузеры на платформах Android или iOS - не стесняйтесь - делайте pull-request с результатами тестов для браузеров. Таким образом можно будет определиться какие трансформации применимы для браузеров и таким образом можно будет добавить в опцию парамет `browsers`!
 
-### `customTransformations`: string[], по-умолчанию: []
+### `transformationsList`: string[], по-умолчанию: []
 
 Если в качестве цели вы укажете `custom` - вам необходимо самостоятельно сформировать список желаемых трансформаций.
 Пресет экспортирует несколько констант для этого:
 
--   `transformationsList` - содержит список абсолютно всех трансформаций в пресете
+-   `fuulTransformationsList` - содержит список абсолютно всех трансформаций в пресете
 -   `arrayTransformations` - содержит список всех трансформаций для Array
--   `objectTransformations` - содержит список всех трансформаций для Object
--   `stringTransformations` - содержит список всех трансформаций для String
 -   `arrayExpressionTransformations` - содержит список трансформаций для выражений, формирующих Array (без трансформаций для цепочек вызовов циклических методов)
 -   `arrayChainsMethodsTransformations` - содержит список трансформаций только для цепочек вызовов циклических методов Array
+-   `objectTransformations` - содержит список всех трансформаций для Object
+-   `stringTransformations` - содержит список всех трансформаций для String
 -   `varTransformations` - содержит список всех трансформаций для Variable
 
 смотри секцию [Трансформации](#Трансформации)

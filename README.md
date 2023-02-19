@@ -103,6 +103,7 @@ The preset has the following options:
 
 -   name
 -   target
+-   transformationsList
 -   unsafeTransformations
 -   verbose
 -   useStatsServer
@@ -141,17 +142,17 @@ At the moment (due to the lack of an opportunity for me to test browsers on the 
 
 If you have the opportunity to test all the most used browsers on Android or iOS platforms - do not hesitate - make a pull-request with the results of tests for browsers. Thus, it will be possible to determine which transformations are applicable for browsers and thus it will be possible to add the `browsers` parameter to the option!
 
-### `customTransformations`: string[], by default: []
+### `transformationsList`: string[], by default: []
 
 If you specify `custom` as the target, you need to create a list of desired transformations yourself.
 The preset exports several constants for this:
 
--   `transformationsList` - contains a list of absolutely all transformations in the preset
+-   `fuulTransformationsList` - contains a list of absolutely all transformations in the preset
 -   `arrayTransformations` - contains a list of all transformations for Array
--   `objectTransformations` - contains a list of all transformations for Object
--   `stringTransformations` - contains a list of all transformations for String
 -   `arrayExpressionTransformations` - contains a list of transformations for expressions forming an Array (without transformations for chains of cyclic method calls)
 -   `arrayChainsMethodsTransformations` - contains a list of transformations only for chains of cyclic method calls Array
+-   `objectTransformations` - contains a list of all transformations for Object
+-   `stringTransformations` - contains a list of all transformations for String
 -   `varTransformations` - contains a list of all transformations for Variable
 
 see the [Transformations](#Transformations) section
