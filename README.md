@@ -183,7 +183,7 @@ While the preset is running, you can collect the statistics on the transformatio
 To do this, you need to configure the parameters of the transformation statistics collection server by specifying the address or host name on which the statistics collection server is running and its port, for example:
 
 ```js
-{
+useStatsServer: {
     host: '127.0.0.1',
     port: 3000
 }
