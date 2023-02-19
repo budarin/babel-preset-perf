@@ -571,7 +571,12 @@ Then using the `half division rule` for transformations, find for each "defectiv
                     'babel-preset-perf',
                     {
                         target: 'custom',
-                        transformationsList: [...],
+                        transformationsList: [
+                            'Array destructuring',
+                            'Array.join unfold',
+                            'Array.map unfold',
+                            ...
+                        ],
                         unsafeTransformations: true
                     }
                 ]
