@@ -1,7 +1,7 @@
 declare interface PluginOptions {
     name: string;
     target: 'node' | 'custom'; // 'browser'
-    customTransformations?: string[];
+    transformationsList?: string[];
     unsafeTransformations: boolean;
     verbose?: boolean;
     useStatsServer?:
