@@ -10,7 +10,7 @@ export function validateOptions(options: PluginOptions): PluginOptions {
     const { target, name, verbose, unsafeTransformations, useStatsServer } = options;
 
     if ('customTransformations' in options) {
-        throw new Error(`${PRESET_NAME}: customTransformations is deprecated: please use transformationsList!`);
+        throw new Error(`${PRESET_NAME}: customTransformations is deprecated, please use transformationsList instead!`);
     }
 
     if (target === undefined) {
