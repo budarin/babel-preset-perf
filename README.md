@@ -56,7 +56,7 @@ if (process.env['NODE_ENV'] === 'production') {
 return config;
 ```
 
-`babel-present-perf` must be the 1st in the list so that it can process all the code that can be translated or inserted into the resulting code by previous presets.
+`babel-present-perf` must be the 1st in the list so that it can process all the code that can be transpiled or inserted into the resulting code by previous presets.
 
 This way you will configure Babel to transpile the code you wrote.
 
