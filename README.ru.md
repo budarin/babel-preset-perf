@@ -147,9 +147,9 @@ return webpackConfig;
 Если в качестве цели вы укажете `custom` - вам необходимо самостоятельно сформировать список желаемых трансформаций.
 Пресет экспортирует несколько констант для этого:
 
--   `fuulTransformationsList` - содержит список абсолютно всех трансформаций в пресете
+-   `fullTransformationsList` - содержит список абсолютно всех трансформаций в пресете
 -   `arrayTransformations` - содержит список всех трансформаций для Array
--   `arrayExpressionTransformations` - содержит список трансформаций для выражений, формирующих Array (без трансформаций для цепочек вызовов циклических методов)
+-   `arrayExpressionTransformations` - содержит список трансформаций для выражений c Array
 -   `arrayChainsMethodsTransformations` - содержит список трансформаций только для цепочек вызовов циклических методов Array
 -   `objectTransformations` - содержит список всех трансформаций для Object
 -   `stringTransformations` - содержит список всех трансформаций для String

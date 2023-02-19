@@ -147,9 +147,9 @@ If you have the opportunity to test all the most used browsers on Android or iOS
 If you specify `custom` as the target, you need to create a list of desired transformations yourself.
 The preset exports several constants for this:
 
--   `fuulTransformationsList` - contains a list of absolutely all transformations in the preset
+-   `fullTransformationsList` - contains a list of absolutely all transformations in the preset
 -   `arrayTransformations` - contains a list of all transformations for Array
--   `arrayExpressionTransformations` - contains a list of transformations for expressions forming an Array (without transformations for chains of cyclic method calls)
+-   `arrayExpressionTransformations` - contains a list of transformations for expressions with an Array
 -   `arrayChainsMethodsTransformations` - contains a list of transformations only for chains of cyclic method calls Array
 -   `objectTransformations` - contains a list of all transformations for Object
 -   `stringTransformations` - contains a list of all transformations for String
