@@ -222,6 +222,35 @@ node ./node_modules/babel-preset-perf/dist/statsServer.js
 Ниже перечислен список трансформаций, которые применяются в пресете и которые были обнаружены мною в моем продуктовом бандле.
 Не стесняйтесь - предлагайте свои.
 
+-   Array destructuring
+-   Array.join unfold
+-   Array.map unfold
+-   Array.map.join unfold
+-   Array.filter.forEach
+-   Array.filter.join
+-   Array.filter.length
+-   Array.filter.length as boolean
+-   Array.filter.map
+-   Array.filter.map.join
+-   Array.filter.reduce
+-   Array.join
+-   Array.map
+-   Array.map.join
+-   Array.map.forEach
+-   Array.map.filter
+-   Array.map.filter.join
+-   Array.map.reduce
+-   Array.slice.every
+-   Array.slice.map.join
+-   Object.entries.filter.map.join
+-   Object.entries.forEach
+-   Object.entries.reduce
+-   Object.entries.map
+-   Object.values[0]
+-   Object expression with spread
+-   String.slice
+-   Variable transform const and let with var
+
 Исходный код до трансформации и после можно посмотреть в папке
 `./tests/transformation-tests/__fixtures__/<transformation name>` в файлах:
 
