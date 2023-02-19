@@ -7,6 +7,13 @@ describe('slice.every', () => {
     const arr = [1, 2, 3, 4, 5, 6];
     const obj = { i: 1 };
 
+    test('slice.every - empty array', () => {
+        const r1 = arraySliceEveryHelper([], undefined, undefined, (x) => x > 0);
+        const r2 = [].slice().every((x) => x > 0);
+
+        expect(r1).toEqual(r2);
+    });
+
     test('slice.every', () => {
         const r1 = arraySliceEveryHelper(arr, undefined, undefined, (x) => x > 0);
         const r2 = arr.slice().every((x) => x > 0);

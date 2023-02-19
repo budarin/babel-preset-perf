@@ -14,6 +14,16 @@ describe('map.filter', () => {
         j: 0,
     };
 
+    test('arr.map.filter - empty array', () => {
+        expect([].map((x) => x + 1).filter((x) => x > 0)).toEqual(
+            arrayMapFilterHelper(
+                [],
+                (x) => x + 1,
+                (x) => x > 0,
+            ),
+        );
+    });
+
     test('arr.map.filter', () => {
         expect(arr.map((x) => x + 1).filter((x) => x > 0)).toEqual(
             arrayMapFilterHelper(

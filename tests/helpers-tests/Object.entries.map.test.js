@@ -6,6 +6,13 @@ const { objectEntriesMapHelperWithMapThis } = require('../../dist/helpers/object
 describe('Object.entries', () => {
     const obj = { one: 1, two: 2 };
 
+    test('Object.entries(obj).map - empty object', () => {
+        const r1 = objectEntriesMapHelper({}, ([key, val], i) => key.length + String(val).length + i);
+        const r2 = Object.entries({}).map(([key, val], i) => key.length + String(val).length + i);
+
+        expect(r1).toStrictEqual(r2);
+    });
+
     test('Object.entries(obj).map', () => {
         const r1 = objectEntriesMapHelper(obj, ([key, val], i) => key.length + String(val).length + i);
         const r2 = Object.entries(obj).map(([key, val], i) => key.length + String(val).length + i);

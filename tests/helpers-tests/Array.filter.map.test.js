@@ -10,6 +10,18 @@ const {
 describe('filter.map', () => {
     const arr = [1, 2, 3];
 
+    test('arr.filter.map - empty array', () => {
+        const r1 = [].filter((x) => x > 0.5).map((x, i) => x + i);
+
+        const r2 = arrayFilterMapHelper(
+            [],
+            (x) => x > 0.5,
+            (x, i) => x + i,
+        );
+
+        expect(r1).toEqual(r2);
+    });
+
     test('arr.filter.map', () => {
         const r1 = arr.filter((x) => x > 0.5).map((x, i) => x + i);
 

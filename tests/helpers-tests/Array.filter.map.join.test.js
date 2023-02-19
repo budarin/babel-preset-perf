@@ -10,6 +10,22 @@ const {
 describe('filter.map.join', () => {
     const arr = [1, 2, 3];
 
+    test('arr.filter.map.join - empty array', () => {
+        const r1 = []
+            .filter((x) => x > 0.5)
+            .map((x, i) => x + i)
+            .join(' - ');
+
+        const r2 = arrayFilterMapJoinHelper(
+            [],
+            (x) => x > 0.5,
+            (x, i) => x + i,
+            ' - ',
+        );
+
+        expect(r1).toEqual(r2);
+    });
+
     test('arr.filter.map.join', () => {
         const r1 = arr
             .filter((x) => x > 0.5)

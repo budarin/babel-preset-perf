@@ -10,6 +10,13 @@ describe('array.filter.length', () => {
         j: 0.5,
     };
 
+    test('arr.filter.length - empty array', () => {
+        const r1 = arrayFilterLengthHelper([], (x) => x > 0.5);
+        const r2 = [].filter((x) => x > 0.5).length;
+
+        expect(r1).toEqual(r2);
+    });
+
     test('arr.filter.length', () => {
         const r1 = arrayFilterLengthHelper(arr, (x) => x > 0.5);
         const r2 = arr.filter((x) => x > 0.5).length;

@@ -6,6 +6,10 @@ const { arrayMapHelperWithMapThis } = require('../../dist/helpers/arrayMapHelper
 describe('map', () => {
     const arr = [1, 2, 3];
 
+    test('arr.map - empty array', () => {
+        expect([].map((x) => x + 1)).toEqual(arrayMapHelper([], (x) => x + 1));
+    });
+
     test('arr.map', () => {
         expect(arr.map((x) => x + 1)).toEqual(arrayMapHelper(arr, (x) => x + 1));
     });

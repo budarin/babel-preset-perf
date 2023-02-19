@@ -5,6 +5,13 @@ const { stringSliceHelper } = require('../../dist/helpers/stringSliceHelper');
 describe('String.slice', () => {
     const str = 'string';
 
+    test('with 2 params - empty string', () => {
+        const r1 = stringSliceHelper('', 1, 4);
+        const r2 = ''.slice(1, 4);
+
+        expect(r1).toEqual(r2);
+    });
+
     test('with 2 params', () => {
         const r1 = stringSliceHelper(str, 1, 4);
         const r2 = str.slice(1, 4);

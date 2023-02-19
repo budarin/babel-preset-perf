@@ -6,6 +6,18 @@ const { arrayFilterReduceHelperWithFilterThis } = require('../../dist/helpers/ar
 describe('map.reduce', () => {
     const arr = [1, 2, 3];
 
+    test('arr.filter.reduce - empty array', () => {
+        const r1 = [].filter((x) => x > 1).reduce((acc, x) => acc + x, 0);
+        const r2 = arrayFilterReduceHelper(
+            [],
+            (x) => x > 1,
+            (acc, x) => acc + x,
+            0,
+        );
+
+        expect(r1).toEqual(r2);
+    });
+
     test('arr.filter.reduce', () => {
         const r1 = arr.filter((x) => x > 1).reduce((acc, x) => acc + x, 0);
         const r2 = arrayFilterReduceHelper(

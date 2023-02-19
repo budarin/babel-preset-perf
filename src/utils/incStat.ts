@@ -1,3 +1,4 @@
+import generate from '@babel/generator';
 import { NodePath, PluginPass } from '@babel/core';
 
 import { helpersPath } from './helpersPath';
@@ -24,7 +25,7 @@ export function incStat(plugin: PluginPass, path: NodePath, transformation: stri
         const stats = {
             config: (plugin.opts as PluginOptions).name,
             module: plugin.filename || 'unknown',
-            code: pp?.getSource() || 'Inserted helper declatartion',
+            code: pp?.getSource() || 'generated: ' + generate(path.node).code,
             line: loc?.start.line || 0,
             collumn: loc?.start.column || 0,
             transformation,

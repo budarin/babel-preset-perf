@@ -11,7 +11,7 @@ This allows developers to still write expressive, easy-to-read and easy-to-under
 Analyzing the flamegraph of one of my boilerplates, I noticed that in the hot zone on an empty project there is the code of one of the widely used libraries.
 I turned to the developers with a request to rewrite that code to a more productive one, to which I received an answer: we will not rewrite the code into unreadable and incomprehensible, but more productive to the detriment of the readability and maintainability of our code.
 
-After thinking a little, I agreed with them, and came to the understanding that it was necessary to study Babel and write a set of plugins on it that would fix performance problems in npm dependencies!
+After thinking a little, I agreed with them, and came to the understanding that it was necessary to study Babel and write a set of plugins on it that would increase performance in `npm dependencies`!
 
 After many hours spent studying the topic of microbenchmarking, testing tools, Babel and code optimization methods in js, `babel-preset-perf` was created!
 
@@ -56,7 +56,7 @@ if (process.env['NODE_ENV'] === 'production') {
 return config;
 ```
 
-`babel-present-perf` must be 1st in the list so that it can process all the code that can be translated or inserted into the resulting code by previous presets.
+`babel-present-perf` must be the 1st in the list so that it can process all the code that can be translated or inserted into the resulting code by previous presets.
 
 This way you will configure Babel to transpile the code you wrote.
 
@@ -103,6 +103,7 @@ The preset has the following options:
 
 -   name
 -   target
+-   transformationsList
 -   unsafeTransformations
 -   verbose
 -   useStatsServer
@@ -141,17 +142,17 @@ At the moment (due to the lack of an opportunity for me to test browsers on the 
 
 If you have the opportunity to test all the most used browsers on Android or iOS platforms - do not hesitate - make a pull-request with the results of tests for browsers. Thus, it will be possible to determine which transformations are applicable for browsers and thus it will be possible to add the `browsers` parameter to the option!
 
-### `customTransformations`: string[], by default: []
+### `transformationsList`: string[], by default: []
 
 If you specify `custom` as the target, you need to create a list of desired transformations yourself.
 The preset exports several constants for this:
 
--   `transformationsList` - contains a list of absolutely all transformations in the preset
+-   `fuulTransformationsList` - contains a list of absolutely all transformations in the preset
 -   `arrayTransformations` - contains a list of all transformations for Array
--   `objectTransformations` - contains a list of all transformations for Object
--   `stringTransformations` - contains a list of all transformations for String
 -   `arrayExpressionTransformations` - contains a list of transformations for expressions forming an Array (without transformations for chains of cyclic method calls)
 -   `arrayChainsMethodsTransformations` - contains a list of transformations only for chains of cyclic method calls Array
+-   `objectTransformations` - contains a list of all transformations for Object
+-   `stringTransformations` - contains a list of all transformations for String
 -   `varTransformations` - contains a list of all transformations for Variable
 
 see the [Transformations](#Transformations) section
@@ -221,6 +222,35 @@ Prevents transpilation of the statement following it.
 
 Below is a list of transformations that are used in the preset and which I discovered in my product bundle.
 Do not hesitate - offer your own.
+
+-   Array destructuring
+-   Array.join unfold
+-   Array.map unfold
+-   Array.map.join unfold
+-   Array.filter.forEach
+-   Array.filter.join
+-   Array.filter.length
+-   Array.filter.length as boolean
+-   Array.filter.map
+-   Array.filter.map.join
+-   Array.filter.reduce
+-   Array.join
+-   Array.map
+-   Array.map.join
+-   Array.map.forEach
+-   Array.map.filter
+-   Array.map.filter.join
+-   Array.map.reduce
+-   Array.slice.every
+-   Array.slice.map.join
+-   Object.entries.filter.map.join
+-   Object.entries.forEach
+-   Object.entries.reduce
+-   Object.entries.map
+-   Object.values[0]
+-   Object expression with spread
+-   String.slice
+-   Variable transform const and let with var
 
 The source code before and after the transformation can be viewed in the folder
 `./tests/transformation-tests/__fixtures__/<transformation name>` in the files:
@@ -443,9 +473,15 @@ The idea of this transformation, as well as many other useful tips, was offered 
 
 ## Troubleshooting
 
-A tragedy may happen - one of the packages in your dependencies produces arrays with holes/sparse arrays (hopefully not your code!?) - in this case, the trasformations may not produce the result that is expected (it all depends on the array's methods - they turn out to handle holes differently!
+A tragedy may happen - one of the packages in your dependencies produces arrays with holes (I hope not your code!?) - in this case, the trasformations may not produce the result that is expected (it all depends on the array methods - they turn out to process holes differently)!
 
-The question arises in detecting this negligent developer, his package and excluding him and his package from preset processing.
+The Troubleshooting technique is as follows:
+
+-   collect a list of used modules from npm
+-   filtering this list using `include` to find those that give the wrong result
+-   then filtering the list of transformations - find which transformations for each of these modules lead to failures
+-   study the module code to understand what the problem is
+
 First you need to modify the rule for webpack so that you can get a list of modules imported from node_modules
 
 ```js
@@ -484,7 +520,7 @@ if (process.env.NODE_ENV === 'production') {
 return webpackConfig;
 ```
 
-To begin with, we can make a list of packages used by our application by selecting only package names from the full path of modules, and then using the `half division rule`, you can consistently refine the list of allowed packages
+Using the `half division rule`, you can consistently refine the list of allowed packages to find those modules that lead to defects
 
 ```js
 const allowedPackages = [.....]
@@ -517,13 +553,14 @@ const allowedPackages = [.....]
 }
 ```
 
-find the problematic ones and after going through all the modules of the problematic packages, find the really defective ones and add them to the list `exclude` for the loader
+Then using the `half division rule` for transformations, find for each "defective module" those transformations due to which it gives incorrect results
 
 ```js
 {
     test: /\.(cjs|mjs|js)$/,
-    include: /node_modules/,
-    exclude: [pathToDefectedModule1, pathToDefectedModule2, .....],
+    include: (filePath) => {
+        return /node_modules/.test(filePath) && filePath === theModule;
+    },
     use: {
         loader: 'babel-loader',
         options: {
@@ -533,7 +570,8 @@ find the problematic ones and after going through all the modules of the problem
                 [
                     'babel-preset-perf',
                     {
-                        target: 'node',
+                        target: 'custom',
+                        transformationsList: [...],
                         unsafeTransformations: true
                     }
                 ]
