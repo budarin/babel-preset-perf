@@ -3,7 +3,7 @@ describe('slice.map.join', () => {
     const obj = { I: 1 };
 
     test('slice.every', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.slice().every((x) => x > 0);
         const r2 = arr.slice().every((x) => x > 0);
 
@@ -11,7 +11,7 @@ describe('slice.map.join', () => {
     });
 
     test('slice(1).every', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.slice(1).every((x) => x > 0);
         const r2 = arr.slice(1).every((x) => x > 0);
 
@@ -19,7 +19,7 @@ describe('slice.map.join', () => {
     });
 
     test('slice(1,3).every', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.slice(1, 3).every((x) => x > 0);
         const r2 = arr.slice(1, 3).every((x) => x > 0);
 
@@ -27,7 +27,7 @@ describe('slice.map.join', () => {
     });
 
     test('slice(-3).every', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.slice(-3).every((x) => x > 0);
         const r2 = arr.slice(-3).every((x) => x > 0);
 
@@ -35,7 +35,7 @@ describe('slice.map.join', () => {
     });
 
     test('slice(0,-1).every', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.slice(0, -1).every((x) => x > 0);
         const r2 = arr.slice(0, -1).every((x) => x > 0);
 
@@ -43,7 +43,7 @@ describe('slice.map.join', () => {
     });
 
     test('slice(-3,-1).every', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.slice(-3, -1).every((x) => x > 0);
         const r2 = arr.slice(-3, -1).every((x) => x > 0);
 
@@ -51,7 +51,7 @@ describe('slice.map.join', () => {
     });
 
     test('slice.every with every this', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.slice().every(function (x) {
             return x > this.i;
         }, obj);

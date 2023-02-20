@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function arraySliceEveryHelperWithEveryThis(array, start = 0, end = array.length, everyPredicate, everyThis) {
     if (start > -1 && end > -1) {
         var i = -1;

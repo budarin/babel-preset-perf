@@ -7,7 +7,7 @@ describe('array join unfolding', () => {
         sep = ' | ';
 
     test('one item', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1].join();
         const r2 = [1].join();
 
@@ -15,7 +15,7 @@ describe('array join unfolding', () => {
     });
 
     test('number items', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3, 4, 5].join();
         const r2 = [1, 2, 3, 4, 5].join();
 
@@ -23,7 +23,7 @@ describe('array join unfolding', () => {
     });
 
     test('string items', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = ["default-src 'none';", "base-uri 'none';", "object-src 'none';"].join(' ');
         const r2 = ["default-src 'none';", "base-uri 'none';", "object-src 'none';"].join(' ');
 
@@ -31,7 +31,7 @@ describe('array join unfolding', () => {
     });
 
     test('mixed items', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [s0 ? 5 : 0, 1, 'two', 'three', true, null, undefined, s1, s12].join('-');
         const r2 = [s0 ? 5 : 0, 1, 'two', 'three', true, null, undefined, s1, s12].join('-');
 
@@ -39,7 +39,7 @@ describe('array join unfolding', () => {
     });
 
     test('identifier items', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [s1, s12, s13, s14].join();
         const r2 = [s1, s12, s13, s14].join();
 
@@ -47,7 +47,7 @@ describe('array join unfolding', () => {
     });
 
     test('separator is identificator', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [s1, s12, s13, s14].join(sep);
         const r2 = [s1, s12, s13, s14].join(sep);
 

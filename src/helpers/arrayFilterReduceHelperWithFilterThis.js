@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function arrayFilterReduceHelperWithFilterThis(array, filterPredicate, filterThis, reducePredicate, initialValue) {
     var i = -1;
     var found = -1;

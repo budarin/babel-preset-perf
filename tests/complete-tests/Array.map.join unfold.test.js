@@ -2,7 +2,7 @@ describe('array map.join unfolding', () => {
     const f = (x, i) => x + i;
 
     test('test1', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(String).join();
         const r2 = [1, 2, 3].map(String).join();
 
@@ -10,7 +10,7 @@ describe('array map.join unfolding', () => {
     });
 
     test('test2', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map((x) => x).join();
         const r2 = [1, 2, 3].map((x) => x).join();
 
@@ -18,7 +18,7 @@ describe('array map.join unfolding', () => {
     });
 
     test('test3', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map((x, i) => x + i).join();
         const r2 = [1, 2, 3].map((x, i) => x + i).join();
 
@@ -26,7 +26,7 @@ describe('array map.join unfolding', () => {
     });
 
     test('test4', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3]
             .map(function (x, i) {
                 return x + i;
@@ -42,7 +42,7 @@ describe('array map.join unfolding', () => {
     });
 
     test('test5', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(f).join();
         const r2 = [1, 2, 3].map(f).join();
 
@@ -50,7 +50,7 @@ describe('array map.join unfolding', () => {
     });
 
     test('test6', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map((x, i, a) => x + i).join();
         const r2 = [1, 2, 3].map((x, i, a) => x + i).join();
 
@@ -60,7 +60,7 @@ describe('array map.join unfolding', () => {
     test('test7', () => {
         const f1 = (x, i, a) => x + i;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(f1).join();
         const r2 = [1, 2, 3].map(f1).join();
 
@@ -68,7 +68,7 @@ describe('array map.join unfolding', () => {
     });
 
     test('test8', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map((x, i, a) => x + a[i]).join();
         const r2 = [1, 2, 3].map((x, i, a) => x + a[i]).join();
 
@@ -76,7 +76,7 @@ describe('array map.join unfolding', () => {
     });
 
     test('test9', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = () => [1, 2, 3].map(f).join('-');
         const r2 = () => [1, 2, 3].map(f).join('-');
 
@@ -84,7 +84,7 @@ describe('array map.join unfolding', () => {
     });
 
     test('test10', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = () => [1, 2, 3].map((x, i, a) => x + i).join('-');
         const r2 = () => [1, 2, 3].map((x, i, a) => x + i).join('-');
 
@@ -92,7 +92,7 @@ describe('array map.join unfolding', () => {
     });
 
     test('test11', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = () => [1, 2, 3].map((x, i, a) => x + a[i]).join('-');
         const r2 = () => [1, 2, 3].map((x, i, a) => x + a[i]).join('-');
 

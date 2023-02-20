@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function stringSliceHelper(strObject, start, end) {
     if (typeof strObject === 'string') {
         return strObject.substring(start || 0, end ? (end < 0 ? strObject.length + end : end) : end);

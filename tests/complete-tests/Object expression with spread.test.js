@@ -5,7 +5,7 @@ describe('Object', () => {
         const f = { f: 'f' };
         const obj = { me: 1 };
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = { a: { ...obj, a: 1, c: 2, ...b, d: 3 }, ...c, f };
         const r2 = { a: { ...obj, a: 1, c: 2, ...b, d: 3 }, ...c, f };
 

@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function objectEntriesFilterMapJoinHelperWithFilterAndMapThis(
     obj,
     filterPredicate,

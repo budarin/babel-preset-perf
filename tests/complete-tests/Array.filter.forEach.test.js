@@ -6,7 +6,7 @@ describe('filter.forEach', () => {
         let r1 = 0,
             r2 = 0;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         arr.filter((x) => x > 1).forEach((x) => {
             r1 = r1 + x;
         });
@@ -22,7 +22,7 @@ describe('filter.forEach', () => {
         let r1 = 0,
             r2 = 0;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         arr.filter(function (x) {
             return x > 1;
         }).forEach(function (x) {
@@ -42,7 +42,7 @@ describe('filter.forEach', () => {
         let r1 = 0,
             r2 = 0;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         arr.filter(function (x) {
             return x > this.i;
         }, obj).forEach(function (x) {
@@ -62,7 +62,7 @@ describe('filter.forEach', () => {
         let r1 = 0,
             r2 = 0;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         arr.filter(function (x) {
             return x > this.i;
         }, obj).forEach(function (x) {

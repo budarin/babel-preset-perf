@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function arrayJoinHelper(array, argument) {
     if (Array.isArray(array)) {
         var i = 0;

@@ -2,7 +2,7 @@ describe('filter.reduce', () => {
     const arr = [1, 2, 3];
 
     test('arr.filter.reduce', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.filter((x) => x > 1).reduce((acc, x) => acc + x, 0);
         const r2 = arr.filter((x) => x > 1).reduce((acc, x) => acc + x, 0);
 
@@ -12,7 +12,7 @@ describe('filter.reduce', () => {
     test('arr.filter.reduce with filter this', () => {
         const obj = { i: 1 };
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .filter(function (x) {
                 return x > this.i;

@@ -1,7 +1,7 @@
 describe('Array ', () => {
     const array = [1, 2, , 4, 5];
     test('destructuring with identifiedr', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const [a, b, c = 1, ...rest] = array,
             v = 1;
 
@@ -19,7 +19,7 @@ describe('Array ', () => {
     test('destructuring with call expression', () => {
         const ff = () => array;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const [a, b, c = 1, ...rest] = ff(),
             v = 1;
 
