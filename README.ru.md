@@ -212,11 +212,11 @@ node ./node_modules/babel-preset-perf/dist/statsServer.js
 
 ## Магические комментарии
 
-### @babel-preset-perf-ignore
+### // babel-preset-perf-ignore
 
 Установленный в начале модуля - предотвращает транспиляцию всего модуля.
 
-### @babel-preset-perf-disable-next-line
+### // babel-preset-perf-disable-next-line
 
 Предотвращает транспиляцию следующего за ним выражения.
 

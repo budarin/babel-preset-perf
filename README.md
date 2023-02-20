@@ -210,11 +210,11 @@ I recommend downloading the file to your device (or view the raw file in a brows
 
 ## Magical Comments
 
-### @babel-preset-perf-ignore
+### // babel-preset-perf-ignore
 
 Written at the top of the module - prevents the transforming of the entire module.
 
-### @babel-preset-perf-disable-next-line
+### // babel-preset-perf-disable-next-line
 
 Prevents transpilation of the statement following it.
 
