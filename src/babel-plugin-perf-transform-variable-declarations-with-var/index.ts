@@ -35,7 +35,7 @@ export default declare((api) => {
                         path.node.declarations.forEach((vd) => {
                             const name = (vd.id as t.Identifier).name;
                             if (bindings.includes(name)) {
-                                path.scope.rename(name, path.scope.generateUidIdentifier(name).name);
+                                path.scope.rename(name);
                             }
                         });
 
