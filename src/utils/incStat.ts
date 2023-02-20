@@ -1,11 +1,14 @@
+import { sep } from 'path';
 import generate from '@babel/generator';
 import { NodePath, PluginPass } from '@babel/core';
 
-import { helpersPath } from './helpersPath';
 import { sendStatistic } from './sendStatistic';
+import { PRESET_NAME, IGNORE_TRANSPILE_MODULES } from '../utils/consts';
+
+const magicPath = `${sep}${PRESET_NAME}${sep}dist${sep}helpers${sep}`;
 
 export function incStat(plugin: PluginPass, path: NodePath, transformation: string): void {
-    if (transformation === 'ignore transpile modules' && plugin.filename?.includes(helpersPath)) {
+    if (transformation === IGNORE_TRANSPILE_MODULES && plugin.filename?.includes(magicPath)) {
         return;
     }
 

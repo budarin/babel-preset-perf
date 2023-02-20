@@ -189,8 +189,10 @@ useStatsServer: {
 }
 ```
 
-Naturally, in order to collect statistics, you need to start the statistics server before the project is built.
+Babel caches all transformations and does not perform them when called again, so it is necessary to clear the cache before collecting statistics.
+The cache is located in the folder `/node_modules/.cache`. If you don't know which folders inside belong to babel, you can safely delete the `.cache` folder.
 
+Naturally, in order to collect statistics, you need to start the statistics server before the project is built.
 To do this, run the command:
 
 ```shell

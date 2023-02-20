@@ -32,29 +32,16 @@ export default declare((api) => {
                             scope = scope.parent;
                         }
 
-                        if (path.node.declarations.length === 1) {
-                            const name = (path.node.declarations[0].id as t.Identifier).name;
-
+                        path.node.declarations.forEach((vd) => {
+                            const name = (vd.id as t.Identifier).name;
                             if (bindings.includes(name)) {
-                                path.scope.rename(name, path.scope.generateUidIdentifier(name).name);
+                                path.scope.rename(name);
                             }
+                        });
 
-                            if (path.node.kind !== VAR) {
-                                path.node.kind = VAR;
-                                incStat(this, path, TRANSFORM_LET_CONST_WITH_VAR);
-                            }
-                        } else {
-                            path.node.declarations.forEach((vd) => {
-                                const name = (vd.id as t.Identifier).name;
-                                if (bindings.includes(name)) {
-                                    path.scope.rename(name, path.scope.generateUidIdentifier(name).name);
-                                }
-                            });
-
-                            if (path.node.kind !== VAR) {
-                                path.node.kind = VAR;
-                                incStat(this, path, TRANSFORM_LET_CONST_WITH_VAR);
-                            }
+                        if (path.node.kind !== VAR) {
+                            path.node.kind = VAR;
+                            incStat(this, path, TRANSFORM_LET_CONST_WITH_VAR);
                         }
                     }
                 },
