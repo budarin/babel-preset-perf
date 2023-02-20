@@ -204,7 +204,7 @@ node ./node_modules/babel-preset-perf/dist/statsServer.js
 -   в консоли нажать Ctrl+C
 -   выполнив в консоли команду `curl -X POST http://127.0.0.1:3000/stop`
 
-после остановки сервера сбора статистики результаты будут записаны в файл `./babel-plugin-perf.stats.json` (по-умочанию, имя файла можно задать при запуске сервера сбора статистики в параметре `--stats-filename`, так же можно настроить хост `--host` и порт `--port` на котором будет запущен сервер сбора статистики).
+после остановки сервера сбора статистики результаты будут записаны в файл `./babel-plugin-perf.stats.json` (имя файла можно задать при запуске сервера сбора статистики в параметре `--stats-filename`, так же можно настроить хост `--host` и порт `--port` на котором будет запущен сервер сбора статистики).
 
 <a href="./babel-plugin-perf.stats.json" target="_blank" rel="noopener noreferrer">Пример</a> собранной статистики при трансформации кода в папке `./tests/demo`.
 
@@ -212,11 +212,11 @@ node ./node_modules/babel-preset-perf/dist/statsServer.js
 
 ## Магические комментарии
 
-### @babel-preset-perf-ignore
+### // babel-preset-perf-ignore
 
 Установленный в начале модуля - предотвращает транспиляцию всего модуля.
 
-### @babel-preset-perf-disable-next-line
+### // babel-preset-perf-disable-next-line
 
 Предотвращает транспиляцию следующего за ним выражения.
 

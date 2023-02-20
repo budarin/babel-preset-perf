@@ -56,7 +56,7 @@ if (process.env['NODE_ENV'] === 'production') {
 return config;
 ```
 
-`babel-present-perf` must be the 1st in the list so that it can process all the code that can be translated or inserted into the resulting code by previous presets.
+`babel-present-perf` must be the 1st in the list so that it can process all the code that can be transpiled or inserted into the resulting code by previous presets.
 
 This way you will configure Babel to transpile the code you wrote.
 
@@ -202,7 +202,7 @@ and after building the project, stop the statistics collection server in one of 
 -   in the console, press Ctrl+C
 -   by executing the command in the console `curl -X POST http://127.0.0.1:3000/stop`
 
-after stopping the statistics collection server, the results will be written to the file `./babel-plugin-perf.stats.json` (by default, the file name and path can be set when starting the statistics collection server in the parameter `--stats-filename`, you can also configure the host `--host` and the port `--port` on which the statistics collection server will be launched).
+after stopping the statistics collection server, the results will be written to the file `./babel-plugin-perf.stats.json` (the file name and path can be set when starting the statistics collection server in the parameter `--stats-filename`, you can also configure the host `--host` and the port `--port` on which the statistics collection server will be launched).
 
 <a href="./babel-plugin-perf.stats.json" target="_blank" rel="noopener noreferrer">Example</a> of collected statistics during code transformation in the folder `./tests/demo'.
 
@@ -210,11 +210,11 @@ I recommend downloading the file to your device (or view the raw file in a brows
 
 ## Magical Comments
 
-### @babel-preset-perf-ignore
+### // babel-preset-perf-ignore
 
 Written at the top of the module - prevents the transforming of the entire module.
 
-### @babel-preset-perf-disable-next-line
+### // babel-preset-perf-disable-next-line
 
 Prevents transpilation of the statement following it.
 

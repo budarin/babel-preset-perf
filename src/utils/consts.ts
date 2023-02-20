@@ -1,7 +1,7 @@
 export const PRESET_NAME = 'babel-preset-perf';
 
-export const IGNORE_MODULE_COMMENT = '@babel-preset-perf-ignore';
-export const IGNORE_LINE_COMMENT = '@babel-preset-perf-disable-next-line';
+export const IGNORE_MODULE_COMMENT = 'babel-preset-perf-ignore';
+export const IGNORE_LINE_COMMENT = 'babel-preset-perf-disable-next-line';
 
 export const BOOLEAN = 'Boolean';
 export const NUMBER = 'Number';
