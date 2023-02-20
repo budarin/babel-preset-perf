@@ -7,6 +7,7 @@ export const BOOLEAN = 'Boolean';
 export const NUMBER = 'Number';
 export const PARSE_INT = 'parseInt';
 export const PARSE_FLOAT = 'parseFloat';
+export const VAR = 'var';
 
 export const MAP = 'map';
 export const KEYS = 'keys';

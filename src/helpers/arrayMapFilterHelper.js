@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function arrayMapFilterHelper(array, mapPredicate, filterPredicate) {
     var i = -1;
     var result = [];

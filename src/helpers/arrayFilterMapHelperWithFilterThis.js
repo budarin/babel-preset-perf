@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function arrayFilterMapHelperWithFilterThis(array, filterPredicate, filterThis, mapPredicate) {
     var i = -1;
     var foundCount = 0;

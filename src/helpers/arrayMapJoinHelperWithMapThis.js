@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function arrayMapJoinHelperWithMapThis(array, mapPredicate, mapThis, separator = ',') {
     var i = 0;
     var len = array.length;

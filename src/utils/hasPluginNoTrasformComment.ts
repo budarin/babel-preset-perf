@@ -3,7 +3,7 @@ import { IGNORE_LINE_COMMENT } from './consts';
 
 /*
  * A function that checks if the last comment for the statement is the
- * `@babel-preset-perf-disable-next-line` comment.
+ * `babel-preset-perf-disable-next-line` comment.
  */
 export function hasPluginNoTrasformComment(path: NodePath): boolean {
     const comments = path.getStatementParent()?.node.leadingComments;

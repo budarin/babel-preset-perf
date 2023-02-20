@@ -6,7 +6,7 @@ describe('map.filter', () => {
     };
 
     test('simple test', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.map((x) => x + 1).filter((x) => x > 0);
         const r2 = arr.map((x) => x + 1).filter((x) => x > 0);
 
@@ -14,7 +14,7 @@ describe('map.filter', () => {
     });
 
     test('with well know predicate', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.map((x) => x + 1).filter(Boolean);
         const r2 = arr.map((x) => x + 1).filter(Boolean);
 
@@ -22,7 +22,7 @@ describe('map.filter', () => {
     });
 
     test('arr.map.filter with map this', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .map(function (x) {
                 return x + this.i;
@@ -43,7 +43,7 @@ describe('map.filter', () => {
     });
 
     test('arr.map.filter with filter this', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .map(function (x) {
                 return x + 1;
@@ -64,7 +64,7 @@ describe('map.filter', () => {
     });
 
     test('arr.map.filter with map and filter this', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .map(function (x) {
                 return x + this.i;

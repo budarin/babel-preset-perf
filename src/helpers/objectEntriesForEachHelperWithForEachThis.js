@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function objectEntriesForEachHelperWithForEachThis(obj, foreachPredicate, forEachThis) {
     var i = -1;
     var keys = Object.keys(obj);

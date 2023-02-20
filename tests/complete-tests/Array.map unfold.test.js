@@ -1,6 +1,6 @@
 describe('array map unfolding', () => {
     test('test1', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [
             'Int8',
             'Uint8',
@@ -33,7 +33,7 @@ describe('array map unfolding', () => {
     });
 
     test('test2', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const f1 = () => ({
             metadata: {
                 union: [
@@ -76,7 +76,7 @@ describe('array map unfolding', () => {
     test('test3', () => {
         const f = (x) => x;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(f);
         const r2 = [1, 2, 3].map(f);
 
@@ -86,7 +86,7 @@ describe('array map unfolding', () => {
     test('test4', () => {
         const f1 = (x, i) => x + i;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(f1);
         const r2 = [1, 2, 3].map(f1);
 
@@ -96,7 +96,7 @@ describe('array map unfolding', () => {
     test('test5', () => {
         const f11 = (x, i, a) => x + i + a[i];
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(f11);
         const r2 = [1, 2, 3].map(f11);
 
@@ -106,7 +106,7 @@ describe('array map unfolding', () => {
     test('test6', () => {
         const f = (x, i, a) => x + i;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(f);
         const r2 = [1, 2, 3].map(f);
 
@@ -114,7 +114,7 @@ describe('array map unfolding', () => {
     });
 
     test('test7', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map((x) => x);
         const r2 = [1, 2, 3].map((x) => x);
 
@@ -122,7 +122,7 @@ describe('array map unfolding', () => {
     });
 
     test('test8', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map((x, i) => x + i);
         const r2 = [1, 2, 3].map((x, i) => x + i);
 
@@ -130,7 +130,7 @@ describe('array map unfolding', () => {
     });
 
     test('test9', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(function (x, i) {
             return x + i;
         });
@@ -142,7 +142,7 @@ describe('array map unfolding', () => {
     });
 
     test('test10', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = (func2) => [1, 2, 3].map(func2);
         const r2 = (func2) => [1, 2, 3].map(func2);
 
@@ -150,7 +150,7 @@ describe('array map unfolding', () => {
     });
 
     test('test11', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(String);
         const r2 = [1, 2, 3].map(String);
 
@@ -158,7 +158,7 @@ describe('array map unfolding', () => {
     });
 
     test('test12', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(Number);
         const r2 = [1, 2, 3].map(Number);
 
@@ -166,7 +166,7 @@ describe('array map unfolding', () => {
     });
 
     test('test13', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = [1, 2, 3].map(Boolean);
         const r2 = [1, 2, 3].map(Boolean);
 

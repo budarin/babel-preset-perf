@@ -6,7 +6,7 @@ describe('map.filter.join', () => {
     };
 
     test('arr.map.filter.join ', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .map((x) => x + 1)
             .filter((x) => x > 0)
@@ -22,7 +22,7 @@ describe('map.filter.join', () => {
 
     test('arr.map.filter.join with filter this argument', () => {
         function f1() {
-            // @babel-preset-perf-disable-next-line
+            // babel-preset-perf-disable-next-line
             return arr
                 .map((x) => x + 1)
                 .filter(function (x) {
@@ -45,7 +45,7 @@ describe('map.filter.join', () => {
 
     test('arr.map.filter.join with map this argument', () => {
         function f1() {
-            // @babel-preset-perf-disable-next-line
+            // babel-preset-perf-disable-next-line
             return arr
                 .map(function (x) {
                     return x + this.i;
@@ -72,7 +72,7 @@ describe('map.filter.join', () => {
 
     test('arr.map.filter.join with map and filter this argument', () => {
         function f1() {
-            // @babel-preset-perf-disable-next-line
+            // babel-preset-perf-disable-next-line
             return arr
                 .map(function (x) {
                     return x + this.i;

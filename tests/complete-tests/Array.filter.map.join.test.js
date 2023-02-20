@@ -4,7 +4,7 @@ describe('filter.map.join', () => {
     const arr = [1, 2, 3];
 
     test('arr.filter.map.join', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .filter((x) => x > 0.5)
             .map((x, i) => x + i)
@@ -18,7 +18,7 @@ describe('filter.map.join', () => {
         expect(r1).toEqual(r2);
     });
     test('arr.filter.map.join  с одним найденным элементом', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .filter((x) => x > 2)
             .map((x, i) => x + i)
@@ -32,7 +32,7 @@ describe('filter.map.join', () => {
         expect(r1).toEqual(r2);
     });
     test('arr.filter.map.join  ничего не найдено', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .filter((x) => x > 5)
             .map((x, i) => x + i)
@@ -52,7 +52,7 @@ describe('filter.map.join', () => {
             j: 0.5,
         };
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .filter(function (x) {
                 return x > 0.5;
@@ -80,7 +80,7 @@ describe('filter.map.join', () => {
             j: 0.5,
         };
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .filter(function (x) {
                 return x > this.j;
@@ -108,7 +108,7 @@ describe('filter.map.join', () => {
             j: 0.5,
         };
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .filter(function (x) {
                 return x > this.j;

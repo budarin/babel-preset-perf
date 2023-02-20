@@ -1,6 +1,6 @@
 'use strict';
 
-// @babel-preset-perf-ignore
+// babel-preset-perf-ignore
 function arraySliceMapJoinHelper(array, start = 0, end = array.length, mapPredicate, separator = ',') {
     var result = '';
 

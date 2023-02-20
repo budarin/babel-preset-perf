@@ -5,7 +5,7 @@ describe('Object.entries', () => {
         let r1 = 0,
             r2 = 0;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         Object.entries(obj).forEach(([key, value], i) => {
             r1 = r1 + key.length + String(value).length + i;
         });
@@ -21,7 +21,7 @@ describe('Object.entries', () => {
         let r1 = 0,
             r2 = 0;
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         Object.entries({ one: 1, two: 2 }).forEach(([key, value], i) => {
             r1 = r1 + key.length + String(value).length + i;
         });
@@ -38,7 +38,7 @@ describe('Object.entries', () => {
             r2 = 0;
         const obj1 = { i: 1 };
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         Object.entries(obj).forEach(function ([key, value], i) {
             r1 = r1 + key.length + String(value).length + i + this.i;
         }, obj1);

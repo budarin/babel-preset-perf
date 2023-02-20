@@ -2,7 +2,7 @@ describe('map.reduce', () => {
     const arr = [1, 2, 3];
 
     test('arr.map.reduce', () => {
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr.map((x) => x + 1).reduce((acc, x) => acc + x, 0);
         const r2 = arr.map((x) => x + 1).reduce((acc, x) => acc + x, 0);
 
@@ -12,7 +12,7 @@ describe('map.reduce', () => {
     test('arr.map.reduce with map this', () => {
         const obj = { i: 1 };
 
-        // @babel-preset-perf-disable-next-line
+        // babel-preset-perf-disable-next-line
         const r1 = arr
             .map(function (x) {
                 return x + this.i;
