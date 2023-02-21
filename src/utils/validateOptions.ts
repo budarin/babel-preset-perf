@@ -57,19 +57,19 @@ export function validateOptions(options: PluginOptions): PluginOptions {
 
     if (options['target'] === 'custom') {
         if (!options['transformationsList'] || !Array.isArray(options['transformationsList'])) {
-            throw new Error(`${PRESET_NAME}: options.transformations must be array of transformation names!`);
+            throw new Error(`${PRESET_NAME}: options.transformationsList must be array of transformation names!`);
         }
 
         if (
             options['transformationsList'].length > 0 &&
-            !options['transformationsList'].every((x) => {
+            !options['transformationsList'].filter(Boolean).every((x) => {
                 return wholeListOfTransformations.includes(x);
             })
         ) {
-            throw new Error(`${PRESET_NAME}: options.transformations must be array of transformation names!`);
+            throw new Error(`${PRESET_NAME}: options.transformationsList must be array of transformation names!`);
         }
 
-        options['transformationsList'].forEach((transformationName) => {
+        options['transformationsList'].filter(Boolean).forEach((transformationName) => {
             pluginsConfig[transformationName as keyof typeof pluginsConfig] = true;
         });
     }
