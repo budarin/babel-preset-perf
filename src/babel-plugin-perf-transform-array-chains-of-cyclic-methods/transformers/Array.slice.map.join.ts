@@ -9,7 +9,7 @@ import { ARRAY_SLICE_MAP_JOIN } from '../../utils/consts';
 
 export function transformSliceMapJoin(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     sliceArgs: Arguments,
     mapArgs: Arguments,
     joinArgs: Arguments,
@@ -30,7 +30,7 @@ export function transformSliceMapJoin(
     const importedName = generateImport(plugin, path, moduleName, alias);
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
 
     while (sliceArgs.length < 2) {
         sliceArgs.push(t.identifier('undefined'));

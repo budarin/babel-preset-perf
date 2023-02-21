@@ -9,7 +9,7 @@ import { ARRAY_FILTER_MAP } from '../../utils/consts';
 
 export function transformFilterMap(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     fiterArgs: Arguments,
     mapArgs: Arguments,
     plugin: PluginPass,
@@ -39,7 +39,7 @@ export function transformFilterMap(
     const importedName = generateImport(plugin, path, moduleName, alias);
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
 
     fiterArgs.forEach((arg) => args.push(arg));
     mapArgs.forEach((arg) => args.push(arg));

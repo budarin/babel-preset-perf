@@ -9,7 +9,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 
 export function transformMapReduce(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     mapArgs: Arguments,
     reduceArgs: Arguments,
     plugin: PluginPass,
@@ -32,7 +32,7 @@ export function transformMapReduce(
 
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
     mapArgs.forEach((arg) => args.push(arg));
     reduceArgs.forEach((arg) => args.push(arg));
 

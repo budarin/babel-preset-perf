@@ -8,7 +8,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 
 export function transformFilterJoin(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     filterArgs: Arguments,
     joinArgs: Arguments,
     plugin: PluginPass,
@@ -27,7 +27,7 @@ export function transformFilterJoin(
 
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
     filterArgs.forEach((arg) => args.push(arg));
     joinArgs.forEach((arg) => args.push(arg));
 

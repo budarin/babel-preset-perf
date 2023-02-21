@@ -9,7 +9,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 
 export function transformFilterLength(
     path: NodePath<t.MemberExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     filterArgs: Arguments,
     plugin: PluginPass,
 ): boolean {
@@ -27,7 +27,7 @@ export function transformFilterLength(
 
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
     filterArgs.forEach((arg) => args.push(arg));
 
     const filterJoinExpr = t.callExpression(t.identifier(importedName), args);

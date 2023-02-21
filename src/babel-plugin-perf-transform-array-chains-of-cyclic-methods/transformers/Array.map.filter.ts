@@ -9,7 +9,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 
 export function transformMapFilter(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     mapArgs: Arguments,
     filterArgs: Arguments,
     plugin: PluginPass,
@@ -40,7 +40,7 @@ export function transformMapFilter(
 
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
     mapArgs.forEach((arg) => args.push(arg));
     filterArgs.forEach((arg) => args.push(arg));
 

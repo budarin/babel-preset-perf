@@ -9,7 +9,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 
 export function transformMapJoin(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     mapArgs: Arguments,
     joinArgs: Arguments,
     plugin: PluginPass,
@@ -28,7 +28,7 @@ export function transformMapJoin(
 
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
     mapArgs.forEach((arg) => args.push(arg));
     joinArgs.forEach((arg) => args.push(arg));
 
