@@ -23,30 +23,25 @@ export default declare((api) => {
                     if (pluginsConfig['Variable transform const and let with var']) {
                         if (path.node.kind !== VAR) {
                             let cancelWhile = false;
-                            let bindings = [] as string[];
                             let scope = path.scope.parent;
 
                             while (scope && cancelWhile === false) {
                                 const keys = Object.keys(scope.bindings);
-                                if (keys.length) {
-                                    bindings = [...bindings, ...keys];
-                                }
-                                scope = scope.parent;
 
-                                if (bindings.length > 0) {
+                                if (keys.length > 0) {
                                     path.node.declarations.forEach((vd) => {
                                         const name = (vd.id as t.Identifier).name;
-
-                                        if (bindings.includes(name)) {
+                                        if (keys.includes(name)) {
                                             path.scope.rename(name);
                                             cancelWhile = true;
                                         }
                                     });
                                 }
+
+                                scope = scope.parent;
                             }
 
                             path.node.kind = VAR;
-
                             incStat(this, path, TRANSFORM_LET_CONST_WITH_VAR);
                         }
                     }
