@@ -341,11 +341,11 @@ may be converted to the following code:
 
 ```js
 function helper(array, mapPredicate, filterPredicate) {
-    var i = -1;
+    var i = 0;
     var result = [];
     var len = array.length;
 
-    while (++i < len) {
+    for (; i < len; i++) {
         var item = mapPredicate(array[i], i);
 
         if (filterPredicate(item, i)) {
