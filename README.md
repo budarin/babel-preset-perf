@@ -1,6 +1,6 @@
 # babel-preset-perf
 
-🇷🇺 [На русском языке](/README.ru.md)
+🇷🇺 [На русском языке](/docs/README.ru.md)
 
 `babel-preset-perf` - this is a babel preset that transforms some js constructs in your code in order to extract maximum performance.
 
