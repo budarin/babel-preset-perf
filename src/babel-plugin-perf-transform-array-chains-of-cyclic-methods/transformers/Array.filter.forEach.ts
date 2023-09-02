@@ -9,7 +9,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 
 export function transformFilterForEach(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     filterArgs: Arguments,
     forEacArgs: Arguments,
     plugin: PluginPass,
@@ -40,7 +40,7 @@ export function transformFilterForEach(
 
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
     filterArgs.forEach((arg) => args.push(arg));
     forEacArgs.forEach((arg) => args.push(arg));
 

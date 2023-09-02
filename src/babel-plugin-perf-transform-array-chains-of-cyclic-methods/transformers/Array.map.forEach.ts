@@ -9,7 +9,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 
 export function transformMapForEach(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     mapArgs: Arguments,
     forEacArgs: Arguments,
     plugin: PluginPass,
@@ -40,7 +40,7 @@ export function transformMapForEach(
 
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
     mapArgs.forEach((arg) => args.push(arg));
     forEacArgs.forEach((arg) => args.push(arg));
 

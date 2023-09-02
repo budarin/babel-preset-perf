@@ -9,7 +9,7 @@ import { ARRAY_FILTER_MAP_JOIN } from '../../utils/consts';
 
 export function transformFilterMapJoin(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     fiterArgs: Arguments,
     mapArgs: Arguments,
     joinArgs: Arguments,
@@ -40,7 +40,7 @@ export function transformFilterMapJoin(
     const importedName = generateImport(plugin, path, moduleName, alias);
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
 
     fiterArgs.forEach((arg) => args.push(arg));
     mapArgs.forEach((arg) => args.push(arg));

@@ -9,7 +9,7 @@ import { ARRAY_SLICE_EVERY } from '../../utils/consts';
 
 export function transformSliceEvery(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     sliceArgs: Arguments,
     everyArgs: Arguments,
     plugin: PluginPass,
@@ -29,7 +29,7 @@ export function transformSliceEvery(
     const importedName = generateImport(plugin, path, moduleName, alias);
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
 
     while (sliceArgs.length < 2) {
         sliceArgs.push(t.identifier('undefined'));

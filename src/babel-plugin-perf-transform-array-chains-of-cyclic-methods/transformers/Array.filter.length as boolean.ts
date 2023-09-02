@@ -9,7 +9,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 export function transformFilterLengthAsBoolean(
     plugin: PluginPass,
     path: NodePath<t.Node>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     filterArgs: Arguments,
     isNegative = false,
 ): boolean {
@@ -17,7 +17,7 @@ export function transformFilterLengthAsBoolean(
         return false;
     }
 
-    const someExpr = t.callExpression(t.memberExpression(arrayObject, t.identifier(SOME)), filterArgs);
+    const someExpr = t.callExpression(t.memberExpression(array, t.identifier(SOME)), filterArgs);
     const filterAsBoolean = isNegative ? t.unaryExpression(NOT, someExpr) : someExpr;
 
     path.replaceWith(filterAsBoolean);

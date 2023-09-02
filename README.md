@@ -1,6 +1,6 @@
 # babel-preset-perf
 
-🇷🇺 [На русском языке](/README.ru.md)
+🇷🇺 [На русском языке](/docs/README.ru.md)
 
 `babel-preset-perf` - this is a babel preset that transforms some js constructs in your code in order to extract maximum performance.
 
@@ -341,11 +341,11 @@ may be converted to the following code:
 
 ```js
 function helper(array, mapPredicate, filterPredicate) {
-    var i = -1;
+    var i = 0;
     var result = [];
     var len = array.length;
 
-    while (++i < len) {
+    for (; i < len; i++) {
         var item = mapPredicate(array[i], i);
 
         if (filterPredicate(item, i)) {

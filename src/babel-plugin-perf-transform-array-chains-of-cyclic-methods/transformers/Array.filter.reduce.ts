@@ -9,7 +9,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 
 export function transformFilterReduce(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     filterArgs: Arguments,
     reduceArgs: Arguments,
     plugin: PluginPass,
@@ -32,7 +32,7 @@ export function transformFilterReduce(
 
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
     filterArgs.forEach((arg) => args.push(arg));
     reduceArgs.forEach((arg) => args.push(arg));
 

@@ -9,7 +9,7 @@ import type { Arguments } from '../../utils/arrgumentsType';
 
 export function transformMap(
     path: NodePath<t.CallExpression>,
-    arrayObject: t.Expression,
+    array: t.Expression,
     mapArgs: Arguments,
     plugin: PluginPass,
 ): boolean {
@@ -26,7 +26,7 @@ export function transformMap(
 
     const args = [];
 
-    args.push(arrayObject);
+    args.push(array);
     mapArgs.forEach((arg) => args.push(arg));
 
     const mapExpr = t.callExpression(t.identifier(importedName), args);
