@@ -74,17 +74,6 @@ if (process.env.NODE_ENV === 'production') {
         use: {
             loader: 'babel-loader',
             options: {
-                babelrc: false,
-                configFile: false,
-                presets: [
-                    [
-                        'babel-preset-perf',
-                        {
-                            target: 'node',
-                            unsafeTransformations: true
-                        }
-                    ]
-                ],
                 cacheDirectory: true,
                 cacheIdentifier: 'server-npm' // <= укажите свое уникальное имя для кэша трансформаций для каждой среды свое
             }
